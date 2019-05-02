@@ -49,6 +49,10 @@ h2 {
     font-size: 115%;
     font-family: 'Amatic SC', cursive;
 }
+#slideshow {
+    margin-top: 5%;
+    margin-left: 27%;
+}
 
 /* .modal_1 {
     width: 300px;
