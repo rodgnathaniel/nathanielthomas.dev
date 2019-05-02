@@ -1,0 +1,302 @@
+{% load static %}
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
+
+    </head>
+    <header>
+        <div id="nav">
+            <h1 id="name">Nathaniel Thomas Rodgers</h1>
+            <h2 id="dev">Web Development</h2>
+            <button id="info">info</button>
+            <button id="portfolio">Portfolio</button>
+        </div>
+
+    </header>   
+    <div id="skills">
+        <div id="py">
+            <img class="thumbnail" src="{% static 'home/python_logo.png' %}" width="4%" height="6%">
+        </div>
+        <div id="js">
+            <img class="thumbnail" src="{% static 'home/js.png' %}" width="8%" height="8%">
+        </div>
+        <div id="dj">
+            <img class="thumbnail" src="{% static 'home/django_.png' %}" width="12%" height="9%">
+        </div>
+    </div>
+    <!-- <canvas id="cnv" class="cnv" width="1250" height="26"></canvas> -->
+        <div id="left">
+     
+   
+        </div>
+
+        <!-- <main> -->
+       
+
+            <div id="middle">
+           
+            </div>
+            <div id="right">
+
+            </div>
+
+        <!-- </main> -->
+
+                <div class="modal_1">
+                    <button class="close" id="close_1" style="display:none"></button>
+                    <span id="span_1">21 years old; Portland, Oregon </span>
+                    <img id="mountain" src="{% static 'home/mountains.png' %}" width="120" height="50" />
+                    <a id="github" href="https://github.com/rodgnathaniel">Github</a>
+                    <a id="linkedin" href="https://www.linkedin.com/in/nathaniel-rodgers-109104170?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNVXwse0TRb6TzH1q4mjnBg%3D%3D">Linkedin</a>
+                </div>
+
+                <div class="modal_2">
+                    <span id="span_2">Portfolio</span>
+                    <button class="close" id="close_2" style="display:none"></button>
+                </div>
+
+                <div id="modal_3" class="modal_3">
+                    <button class="close" id="close_3" style="display:none"></button>
+                    <a id="Django" href="http://nathanielthomas.pythonanywhere.com/" target="_blank">Django</a>
+                    <a id="JavaScript" href="https://github.com/rodgnathaniel/JavaScript" target="_blank">JavaScript</a>
+                    <a id="Python" href="https://github.com/rodgnathaniel/Python" target="_blank">Python</a>
+                    <a id="HTML/CSS" href="https://github.com/rodgnathaniel/HTML-CSS" target="_blank">HTML/CSS</a>
+                </div>
+
+
+                <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/>
+
+             
+
+            <script>
+                let cnv = document.querySelector('#cnv');
+                cnv.backgroundColor = 'red';
+                let width = cnv.width
+                let height = cnv.height
+                let ctx = cnv.getContext('2d');
+
+                var pentagon_img = document.querySelector("#pentagon_img");
+
+
+                let span_2 = document.querySelector('#span_2')
+                let modal_3 = document.querySelector('#modal_3')
+
+                let name = document.querySelector('#name');
+                let dev = document.querySelector('#dev');
+
+                let bottom_contact = false
+                let top_contact = false
+
+                let pentagon = {
+                    px:120,
+                    py: 0,
+                    vx:0,
+                    vy:0,
+                    height: 25,
+                    width: 25
+                }
+                let cnv_top = {
+                    px:0,
+                    py: 5,
+                    height: 5,
+                    width: 25
+                }
+                let line = {
+                    px: 11,
+                    py: 0,
+                    height: 3,
+                    width: 1000
+                }
+    
+
+                let cnv_bottom = {
+                    px:0,
+                    py: 189,
+                    height: 5,
+                    width: 25
+                }
+
+
+
+
+                info.onclick = function() {
+                    // pentagon.px = 138
+                    // pentagon.vx = 0  
+                    modalOpen()
+                    close_2() 
+                    close_3()
+                    
+                
+                };
+
+                portfolio.onclick = function() {
+                    // pentagon.px = 138
+                    // pentagon.vx = 0  
+                    modal_2_open()
+                    close_1() 
+                    // close_3()
+                    
+                
+                };
+                // name.onclick = function() {
+                //     pentagon.px = 138
+                //     pentagon.vx = 0  
+                //     close_1()
+                //     close_2() 
+                //     close_3()
+                // };
+
+                // name.onmouseover = function() {
+                //     pentagon.px -= 30
+                //     pentagon.vx = -11   
+                //     close_3()
+                // };
+                // name.onmouseout = function() {
+                //     close_1()
+                // }
+
+                // dev.onmouseover = function() {
+                //     pentagon.px += 30
+                //     pentagon.vx = 11
+                // };
+                // dev.onmouseout = function() {
+                //     close_2()
+                // }
+              
+                function modalOpen() {
+         
+                    document.querySelector(".modal_1").style.display = "flex";  
+                }
+                function close_1() {
+                    document.querySelector(".modal_1").style.display = "none";  
+                }
+
+                span_2.onmouseover = function() { 
+                    modal_3_open()
+                };
+
+                var modal_3_open = function() {
+                    document.querySelector(".modal_3").style.display = "flex";  
+                }
+                function close_3() {
+                    document.querySelector(".modal_3").style.display = "none";  
+                }
+
+
+                var modal_2_open = function() {
+                    document.querySelector(".modal_2").style.display = "flex";  
+                }
+                function close_2() {
+                    document.querySelector(".modal_2").style.display = "none";  
+                }
+
+                
+                   //function for drawing objects on canvas
+                function draw() {
+                    // clear canvas each time function is called
+                    ctx.clearRect(0, 0, cnv.width, cnv.height)
+
+                    ctx.fillStyle = 'rgb(255,255,0,0.8)';
+                    ctx.fillRect(line.px, line.py, line.width, line.height);
+
+                    ctx.drawImage(pentagon_img, pentagon.px, pentagon.py, pentagon.width, pentagon.height);
+
+                    let objects = [cnv_top, cnv_bottom]
+                    let debug = false
+                    if (debug) {
+                        for (let i=0; i<objects.length; ++i) {
+                            ctx.fillStyle = 'rgba(188,143,143,0.7)';
+                            ctx.fillRect(objects[i].px, objects[i].py, objects[i].width, objects[i].height);
+                        }
+                    }
+
+
+
+
+                }
+
+                draw()
+                window.requestAnimationFrame(main_loop);
+
+
+
+                //animation function
+                function main_loop() {
+                    // if (pentagon.px > 190) {
+                    //     pentagon.px = 170
+                    // } else if (pentagon.py < 5) {
+                    //     pentagon.px = 5
+                    // }
+                    // if (check_collision(pentagon, cnv_top)) {
+                    //     pentagon.vx = 0
+                    //     close_2()
+
+                    //     bottom_contact = false
+                  
+                    //     modalOpen()
+
+                    // } else if (check_collision(pentagon, cnv_bottom)) {
+                    //     pentagon.vx = 0
+                    //     close_1()
+                    //     modal_2_open()
+                    //     bottom_contact = true
+
+                    // } else {
+                    //     close_1()
+                    //     close_2()
+                    //     // close_3.onclick()
+                    // }
+                    
+
+                
+
+
+                    pentagon.px += pentagon.vx
+                    pentagon.py += pentagon.vy
+
+                                    //keyboard commands
+                    document.body.onkeydown = function(e) {
+                        if (e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 65) {
+                            pentagon.px -= 35
+                            pentagon.vx = -11
+                            close_3()
+      
+                        }
+                        if (e.keyCode == 39 || e.keyCode == 68) {
+                            pentagon.px += 35
+                            pentagon.vx = 11
+                        }
+                        // if (e.keyCode == 39 || e.keyCode == 68) {
+                        //     if (bottom_contact) {
+                        //         modal_3_open()
+                        //     }
+                        // }
+                        // if (e.keyCode == 37 || e.keyCode == 65) {
+                        //     if (bottom_contact) {
+                        //         close_3()
+                        //     }
+                        // }
+                    } 
+
+
+                draw()
+                window.requestAnimationFrame(main_loop);
+
+                
+
+                // function for calculating the overlap between two rectangles
+                function check_collision(rect1, rect2) {
+                    let x_overlap = Math.max(0, Math.min(rect1.px + rect1.width, rect2.px + rect2.width) - Math.max(rect1.px, rect2.px))
+                    let y_overlap = Math.max(0, Math.min(rect1.py + rect1.height, rect2.py + rect2.height) - Math.max(rect1.py, rect2.py))
+                    let overlapArea = x_overlap * y_overlap
+                    return overlapArea != 0
+
+                }
+                }
+   
+                                        
+            </script>
+
+        </body>
+</html>
