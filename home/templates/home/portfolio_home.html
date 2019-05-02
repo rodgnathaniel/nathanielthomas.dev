@@ -14,7 +14,7 @@
         </div>
 
     </header>   
-    <div id="skills">
+    <!-- <div id="skills">
         <div id="py">
             <img class="thumbnail" src="{% static 'home/python_logo.png' %}" width="4%" height="6%">
         </div>
@@ -24,7 +24,7 @@
         <div id="dj">
             <img class="thumbnail" src="{% static 'home/django_.png' %}" width="12%" height="9%">
         </div>
-    </div>
+    </div> -->
     <!-- <canvas id="cnv" class="cnv" width="1250" height="26"></canvas> -->
         <div id="left">
      
@@ -43,7 +43,7 @@
 
         <!-- </main> -->
 
-                <div class="modal_1">
+                <!-- <div class="modal_1">
                     <button class="close" id="close_1" style="display:none"></button>
                     <span id="span_1">21 years old; Portland, Oregon </span>
                     <img id="mountain" src="{% static 'home/mountains.png' %}" width="120" height="50" />
@@ -65,7 +65,7 @@
                 </div>
 
 
-                <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/>
+                <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/> -->
 
              
 
@@ -192,96 +192,96 @@
                 }
 
                 
-                   //function for drawing objects on canvas
-                function draw() {
-                    // clear canvas each time function is called
-                    ctx.clearRect(0, 0, cnv.width, cnv.height)
+                //    //function for drawing objects on canvas
+                // function draw() {
+                //     // clear canvas each time function is called
+                //     ctx.clearRect(0, 0, cnv.width, cnv.height)
 
-                    ctx.fillStyle = 'rgb(255,255,0,0.8)';
-                    ctx.fillRect(line.px, line.py, line.width, line.height);
+                //     ctx.fillStyle = 'rgb(255,255,0,0.8)';
+                //     ctx.fillRect(line.px, line.py, line.width, line.height);
 
-                    ctx.drawImage(pentagon_img, pentagon.px, pentagon.py, pentagon.width, pentagon.height);
+                //     ctx.drawImage(pentagon_img, pentagon.px, pentagon.py, pentagon.width, pentagon.height);
 
-                    let objects = [cnv_top, cnv_bottom]
-                    let debug = false
-                    if (debug) {
-                        for (let i=0; i<objects.length; ++i) {
-                            ctx.fillStyle = 'rgba(188,143,143,0.7)';
-                            ctx.fillRect(objects[i].px, objects[i].py, objects[i].width, objects[i].height);
-                        }
-                    }
-
-
-
-
-                }
-
-                draw()
-                window.requestAnimationFrame(main_loop);
+                //     let objects = [cnv_top, cnv_bottom]
+                //     let debug = false
+                //     if (debug) {
+                //         for (let i=0; i<objects.length; ++i) {
+                //             ctx.fillStyle = 'rgba(188,143,143,0.7)';
+                //             ctx.fillRect(objects[i].px, objects[i].py, objects[i].width, objects[i].height);
+                //         }
+                //     }
 
 
 
-                //animation function
-                function main_loop() {
-                    // if (pentagon.px > 190) {
-                    //     pentagon.px = 170
-                    // } else if (pentagon.py < 5) {
-                    //     pentagon.px = 5
-                    // }
-                    // if (check_collision(pentagon, cnv_top)) {
-                    //     pentagon.vx = 0
-                    //     close_2()
 
-                    //     bottom_contact = false
+                // }
+
+                // draw()
+                // window.requestAnimationFrame(main_loop);
+
+
+
+                // //animation function
+                // function main_loop() {
+                //     // if (pentagon.px > 190) {
+                //     //     pentagon.px = 170
+                //     // } else if (pentagon.py < 5) {
+                //     //     pentagon.px = 5
+                //     // }
+                //     // if (check_collision(pentagon, cnv_top)) {
+                //     //     pentagon.vx = 0
+                //     //     close_2()
+
+                //     //     bottom_contact = false
                   
-                    //     modalOpen()
+                //     //     modalOpen()
 
-                    // } else if (check_collision(pentagon, cnv_bottom)) {
-                    //     pentagon.vx = 0
-                    //     close_1()
-                    //     modal_2_open()
-                    //     bottom_contact = true
+                //     // } else if (check_collision(pentagon, cnv_bottom)) {
+                //     //     pentagon.vx = 0
+                //     //     close_1()
+                //     //     modal_2_open()
+                //     //     bottom_contact = true
 
-                    // } else {
-                    //     close_1()
-                    //     close_2()
-                    //     // close_3.onclick()
-                    // }
+                //     // } else {
+                //     //     close_1()
+                //     //     close_2()
+                //     //     // close_3.onclick()
+                //     // }
                     
 
                 
 
 
-                    pentagon.px += pentagon.vx
-                    pentagon.py += pentagon.vy
+                //     pentagon.px += pentagon.vx
+                //     pentagon.py += pentagon.vy
 
-                                    //keyboard commands
-                    document.body.onkeydown = function(e) {
-                        if (e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 65) {
-                            pentagon.px -= 35
-                            pentagon.vx = -11
-                            close_3()
+                //                     //keyboard commands
+                //     document.body.onkeydown = function(e) {
+                //         if (e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 65) {
+                //             pentagon.px -= 35
+                //             pentagon.vx = -11
+                //             close_3()
       
-                        }
-                        if (e.keyCode == 39 || e.keyCode == 68) {
-                            pentagon.px += 35
-                            pentagon.vx = 11
-                        }
-                        // if (e.keyCode == 39 || e.keyCode == 68) {
-                        //     if (bottom_contact) {
-                        //         modal_3_open()
-                        //     }
-                        // }
-                        // if (e.keyCode == 37 || e.keyCode == 65) {
-                        //     if (bottom_contact) {
-                        //         close_3()
-                        //     }
-                        // }
-                    } 
+                //         }
+                //         if (e.keyCode == 39 || e.keyCode == 68) {
+                //             pentagon.px += 35
+                //             pentagon.vx = 11
+                //         }
+                //         // if (e.keyCode == 39 || e.keyCode == 68) {
+                //         //     if (bottom_contact) {
+                //         //         modal_3_open()
+                //         //     }
+                //         // }
+                //         // if (e.keyCode == 37 || e.keyCode == 65) {
+                //         //     if (bottom_contact) {
+                //         //         close_3()
+                //         //     }
+                //         // }
+                //     } 
 
 
-                draw()
-                window.requestAnimationFrame(main_loop);
+                // draw()
+                // window.requestAnimationFrame(main_loop);
 
                 
 
