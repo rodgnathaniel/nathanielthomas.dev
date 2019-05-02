@@ -9,110 +9,48 @@ header{
     width: 100%;
     height: 14%;
 }
-#nav{
-    display:flex;
-    flex-direction:row;
-    
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
-#skills{
+
+
+
+main #nav_title {
+
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    flex-wrap:wrap;
+    /* justify-content:space-evenly; */
+}
+main #nav_buttons{
+    padding-top: 3%;
+    height: 25%;
+    width: 40%;
+    margin-left: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: black;
-
-    background-size:50% 50%;
-    border-radius: 50%50%50%50%;
-
-    margin: 1%,1%,1%,1%;
+    /* background-color: black; */
 
 
 }
-.thumbnail{
-
-}
-#py, #js, #dj{
-
-}
-/* main{
-    display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
-} */
-/* main #left {
-    margin-top: 59%;
-
-    align-items:left;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-    z-index:1; */
-
-}
-main #middle {
-    /* display:flex;
-    flex-direction:row;
-    align-items:left;
-    flex-wrap:wrap;
-    justify-content:space-evenly; */
-
-
-}
-main #right{
-
-} */
 #name {
-    width: 50%;
-    height: 7%;
-    /* padding: 1.5%; */
-    /* background-color:rgba(205,92,92,.6); */
     color:ivory;
-    text-shadow: 1.4px 1.4px rgba(	211,211,211);
-    border-radius: 20px 20px 20px 20px;
-    border: 3%;
-    font-size: 225%;
-    /* padding-botton: 2%; */
-    /* margin: 0 auto; */
-    margin-bottom: 3.5%;
-    /* margin-top: 70%; */
-    display:flex;
-    flex-direction:row;
-    align-items:left;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
     font-family: 'Amatic SC', cursive;
 
 }
-/* 102,205,170,.6 */
 h2 {
     width: 45%;
     height: 5%;
-    /* padding: 1.5%; */
-    /* background-color:rgba(205,92,92,.6); */
     color:ivory;
-    text-shadow: 1px 1px rgba(211,211,211);
-    border-radius: 20px 20px 20px 20px;
-    border: 3%;
     font-size: 115%;
-    padding-botton: 2%;
-    /* margin: 0 auto; */
-    padding-bottom: 2%;
-    /* margin-left: 90%; */
-    display:flex;
-    flex-direction:row;
-    align-items:left;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
     font-family: 'Amatic SC', cursive;
-    /* z-index:1; */
 }
 
-/* .cnv {
-    border: 1px solid black;
-    margin-top: .5%;
-    margin-left: .5%;
-    /* margin-bottom:77%;
-    z-index:3; */
-
-
-.modal_1 {
+/* .modal_1 {
     width: 300px;
     height: 160px;
     background-color: rgba(205,92,92,1);
@@ -241,4 +179,4 @@ h2 {
     cursor:pointer;
     overflow: hidden;  
     outline: none;
-}
+} */
