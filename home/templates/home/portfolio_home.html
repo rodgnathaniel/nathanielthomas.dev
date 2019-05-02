@@ -76,9 +76,62 @@
 
                 <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/> -->
 
-             
+             <img name="slide" width="800" height="600">
 
             <script>
+
+                var i = 0;
+                var images = [];
+                var time = 5000;
+
+                images[0] = 'img1.png';
+                images[1] = 'img2.png';
+                images[2] = 'img3.png';
+
+                function imgchange(){
+                    document.slide.src = images[i];
+
+                    if(i < images.length - 1){
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    
+                    setTimeout("imgchange()", time);
+                }
+
+                window.onload = imgchange();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 let cnv = document.querySelector('#cnv');
                 cnv.backgroundColor = 'red';
                 let width = cnv.width
@@ -302,7 +355,7 @@
                     return overlapArea != 0
 
                 }
-                }
+                
    
                                         
             </script>
