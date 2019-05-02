@@ -49,6 +49,16 @@ h2 {
     font-size: 115%;
     font-family: 'Amatic SC', cursive;
 }
+#self_img{
+    margin-left: 40%;
+}
+#self{
+    
+        border-radius: 50%;
+        border: 5px;
+        border-color: ivory;
+      
+}
 #slideshow {
     margin-top: 5%;
     margin-left: 27%;
