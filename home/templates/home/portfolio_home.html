@@ -75,8 +75,11 @@
 
 
                 <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/> -->
-
-             <img name="slide" width="800" height="600">
+             <!-- <img id="mtn" src="{% static 'home/image1.jpg' %}" style="display:none"/>
+             <img id="mtn" src="{% static 'home/image1.jpg' %}" style="display:none"/> -->
+             <div id="slideshow">
+                <img name="slide" width="500" height="300">
+             </div>
 
             <script>
 
@@ -84,9 +87,9 @@
                 var images = [];
                 var time = 5000;
 
-                images[0] = 'img1.png';
-                images[1] = 'img2.png';
-                images[2] = 'img3.png';
+                images[0] = "{% static 'home/image1.jpg' %}";
+                images[1] = "{% static 'home/image2.jpg' %}";
+                images[2] = "{% static 'home/image3.jpg' %}";
 
                 function imgchange(){
                     document.slide.src = images[i];
