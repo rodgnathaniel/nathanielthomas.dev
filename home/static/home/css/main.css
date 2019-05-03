@@ -131,7 +131,7 @@ h2 {
     transform: translate(-50%, -50%);
     z-index:1;
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
