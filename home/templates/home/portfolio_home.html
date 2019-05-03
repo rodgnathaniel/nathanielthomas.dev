@@ -24,12 +24,19 @@
             <button id="skills">Skills</button>
             <button id="contact">Contact</button>
             <div id="skills_modal">
-                    <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
-                    <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
-                    <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
-                    <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
-                    <a id="html" href="#"><img src="{% static 'home/HTML5.png' %}" width="65" height="50"></a>
-                </div>
+                <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
+                <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
+                <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
+                <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
+                <a id="html" href="#"><img src="{% static 'home/HTML5.png' %}" width="65" height="50"></a>
+            </div>
+            <div id="contact_modal">
+                <span>Feel free to contact me!</span>
+                <span id="email">pdx@nathanielthomas.dev</span>
+                <span id="phone">541.646.5895</span>
+                <a class="links" href="https://github.com/rodgnathaniel">Github</a>
+                <a class="links" href="linkedin.com/in/nathaniel-rodgers-109104170">Linkedin</a>
+            </div>
         </div>
  
     </main>
@@ -96,9 +103,15 @@
 
             <script>
                 let skills = document.querySelector("#skills");
-            
+                let contact = document.querySelector("#contact");
                 skills.onclick = function(){
-                    document.querySelector("#skills_modal").style.display = "flex";  
+                    document.querySelector("#skills_modal").style.display = "flex"; 
+                    document.querySelector("#contact_modal").style.display = "none";   
+                }
+                contact.onclick = function(){
+                    document.querySelector("#contact_modal").style.display = "flex";  
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    
                 }
 
 

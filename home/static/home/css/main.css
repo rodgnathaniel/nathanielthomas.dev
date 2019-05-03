@@ -99,58 +99,41 @@ h2 {
     margin-left: 7%;
     
 }
-
-/* .modal_1 {
-    width: 300px;
-    height: 160px;
-    background-color: rgba(205,92,92,1);
+#contact_modal {
+    width: 71%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
-    left:47%;
-    top:40%;
-    padding-top: 1.5%;
+    left:56.5%;
+    top:45.5%;
     transform: translate(-50%, -50%);
     z-index:1;
-    border-radius: 12px;
+    border-radius: 10px;
     display: none;
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
-}
-.modal_1 span{
-    color: black;
+    align-items: center;
+} 
+#contact_modal span, a{
     padding-top: 2%;
-    padding-bottom: 3%;
-    width: 100%;
-    height: 17%;
+    padding-bottom: 2%;
+    color: ivory;
     font-family: 'Amatic SC', cursive;
-    font-size: 135%;
-    text-decoration: none;
-    text-align: center;
-    /* display: block; */
-
-.modal_1 a{
-    color: black;
-    padding-top: 0%;
-    padding-bottom: 5%;
-    width: 100%;
-    height: 6%;
-    font-family: 'Amatic SC', cursive;
-    font-size: 120%;
-    text-decoration: none;
-    text-align: center;
-    /* display: block; */
+    font-size: 170%;
 }
-.modal_1 img{
+
+/* .modal_1 img{
 
     padding-top: 3%;
     padding-bottom: 0%;
     margin-left: 28%;
     
     /* display: block; */
-}
+/* }
 
 .modal_1 a:hover {
     background-color:rgba(205,92,92,.1);
-}
+} */ 
 
 #skills_modal {
     width: 36%;
