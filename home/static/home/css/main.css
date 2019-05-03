@@ -2,7 +2,6 @@
 
 body{
     background-image:url(/static/home/blue_bg6.png);   
-    /* background-color:rgba(300,300,300,1) */
 }
 #nav_bg{
 
@@ -55,7 +54,6 @@ main{
     flex-direction:column;
     align-items:left;
     flex-wrap:wrap;
-    /* justify-content:space-evenly; */
 }
 #nav_buttons{
     padding-top: 3%;
@@ -65,10 +63,8 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: black; */
-
-
 }
+
 #name {
     color:ivory;
     font-family: 'Amatic SC', cursive;
