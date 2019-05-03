@@ -21,18 +21,17 @@
 
         </header>  
         <div id="nav_bg">
-                <button id="contact">Contact</button>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#"><img src="{% static 'home/django_.png' %}" width="90" height="45"></a>
-                        <a href="#"><img src="{% static 'home/js.png' %}" width="60" height="45"></a>
-                        <a href="#"><img src="{% static 'home/python_logo.png' %}" width="50" height="45"></a>
-                        <a href="#"><img src="{% static 'home/HTML5.png' %}" width="50" height="35"></a>
-                    </div>
+            <button id="skills">Skills</button>
+            <button id="contact">Contact</button>
+            <div id="skills_modal">
+                    <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
+                    <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
+                    <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
+                    <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
+                    <a id="html" href="#"><img src="{% static 'home/HTML5.png' %}" width="65" height="50"></a>
                 </div>
-      
         </div>
+ 
     </main>
 
 
@@ -96,28 +95,13 @@
        
 
             <script>
+                let skills = document.querySelector("#skills");
+            
+                skills.onclick = function(){
+                    document.querySelector("#skills_modal").style.display = "flex";  
+                }
 
 
-
-                /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
                 var i = 0;
                 var images = [];
@@ -171,52 +155,6 @@ window.onclick = function(event) {
 
 
 
-                let cnv = document.querySelector('#cnv');
-                cnv.backgroundColor = 'red';
-                let width = cnv.width
-                let height = cnv.height
-                let ctx = cnv.getContext('2d');
-
-                var pentagon_img = document.querySelector("#pentagon_img");
-
-
-                let span_2 = document.querySelector('#span_2')
-                let modal_3 = document.querySelector('#modal_3')
-
-                let name = document.querySelector('#name');
-                let dev = document.querySelector('#dev');
-
-                let bottom_contact = false
-                let top_contact = false
-
-                let pentagon = {
-                    px:120,
-                    py: 0,
-                    vx:0,
-                    vy:0,
-                    height: 25,
-                    width: 25
-                }
-                let cnv_top = {
-                    px:0,
-                    py: 5,
-                    height: 5,
-                    width: 25
-                }
-                let line = {
-                    px: 11,
-                    py: 0,
-                    height: 3,
-                    width: 1000
-                }
-    
-
-                let cnv_bottom = {
-                    px:0,
-                    py: 189,
-                    height: 5,
-                    width: 25
-                }
 
 
 
