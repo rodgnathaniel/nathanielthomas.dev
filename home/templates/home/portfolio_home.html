@@ -23,13 +23,15 @@
         <div id="nav_bg">
             <button id="skills">Skills</button>
             <button id="contact">Contact</button>
+            <button id="about">About Me</button>
             <div id="skills_modal">
                 <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
                 <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
                 <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
                 <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
-                <a id="html" href="#"><img src="{% static 'home/HTML5.png' %}" width="65" height="50"></a>
+                <a id="html_" href="#"><img src="{% static 'home/html.png' %}" width="65" height="50"></a>
             </div>
+
             <div id="contact_modal">
                 <span id="contact_text">Feel free to contact me!</span>
                 <!-- <img src="{% static 'home/email.png' %}" width="115" height="60"> -->
@@ -39,85 +41,143 @@
                 <a class="links" href="https://github.com/rodgnathaniel">Github</a>
                 <a class="links" href="https://www.linkedin.com/in/nathaniel-rodgers-109104170/">Linkedin</a>
             </div>
+
+            <div id="about_modal">
+
+            </div>
+            <div id="dj_modal">
+
+            </div>
+
+            <div id="py_modal">
+                
+            </div>
+
+            <div id="js_modal">
+                
+            </div>
+
+            <div id="node_modal">
+            
+            </div>
+
+            <div id="html_modal">
+        
+            </div>
         </div>
  
     </main>
-
-
-
-
-
-    <!-- <div id="skills">
-        <div id="py">
-            <img class="thumbnail" src="{% static 'home/python_logo.png' %}" width="4%" height="6%">
-        </div>
-        <div id="js">
-            <img class="thumbnail" src="{% static 'home/js.png' %}" width="8%" height="8%">
-        </div>
-        <div id="dj">
-            <img class="thumbnail" src="{% static 'home/django_.png' %}" width="12%" height="9%">
-        </div>
-    </div> -->
-    <!-- <canvas id="cnv" class="cnv" width="1250" height="26"></canvas> -->
-        <!-- <div id="left">
-     
-   
-        </div>
-
-        <main>
-       
-
-          <div id="middle">
-           
-            </div>
-            <div id="right">
-
-            </div> -->
-
-        <!-- </main> -->
-
-                <!-- <div class="modal_1">
-                    <button class="close" id="close_1" style="display:none"></button>
-                    <span id="span_1">21 years old; Portland, Oregon </span>
-                    <img id="mountain" src="{% static 'home/mountains.png' %}" width="120" height="50" />
-                    <a id="github" href="https://github.com/rodgnathaniel">Github</a>
-                    <a id="linkedin" href="https://www.linkedin.com/in/nathaniel-rodgers-109104170?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNVXwse0TRb6TzH1q4mjnBg%3D%3D">Linkedin</a>
-                </div>
-
-                <div class="modal_2">
-                    <span id="span_2">Portfolio</span>
-                    <button class="close" id="close_2" style="display:none"></button>
-                </div>
-
-                <div id="modal_3" class="modal_3">
-                    <button class="close" id="close_3" style="display:none"></button>
-                    <a id="Django" href="http://nathanielthomas.pythonanywhere.com/" target="_blank">Django</a>
-                    <a id="JavaScript" href="https://github.com/rodgnathaniel/JavaScript" target="_blank">JavaScript</a>
-                    <a id="Python" href="https://github.com/rodgnathaniel/Python" target="_blank">Python</a>
-                    <a id="HTML/CSS" href="https://github.com/rodgnathaniel/HTML-CSS" target="_blank">HTML/CSS</a>
-                </div>
-
-
-                <img id="pentagon_img" src="{% static 'home/pentagon-orange.png' %}" style="display:none"/> -->
-             <!-- <img id="mtn" src="{% static 'home/image1.jpg' %}" style="display:none"/>
-             <img id="mtn" src="{% static 'home/image1.jpg' %}" style="display:none"/> -->
        
 
             <script>
+
                 let skills = document.querySelector("#skills");
                 let contact = document.querySelector("#contact");
+                let about = document.querySelector("#about");
+                let dj = document.querySelector("#dj");
+                let py = document.querySelector("#py");
+                let js = document.querySelector("#js");
+                let node = document.querySelector("#node");
+                let html_ = document.querySelector("#html_");
+
+
                 skills.onclick = function(){
                     document.querySelector("#skills_modal").style.display = "flex"; 
-                    document.querySelector("#contact_modal").style.display = "none";   
+
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none";  
                 }
+
                 contact.onclick = function(){
                     document.querySelector("#contact_modal").style.display = "flex";  
+
                     document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none"; 
                     
                 }
 
+                about.onclick = function(){
+                    document.querySelector("#about_modal").style.display = "flex";  
 
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none"; 
+                }
 
+                dj.onclick = function(){
+                    document.querySelector("#dj_modal").style.display = "flex";  
+
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none"; 
+                }
+
+                py.onclick = function(){
+                    document.querySelector("#py_modal").style.display = "flex"; 
+
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none"; 
+                }
+
+                js.onclick = function(){
+                    document.querySelector("#js_modal").style.display = "flex";  
+
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none"; 
+                }
+
+                node.onclick = function(){
+                    document.querySelector("#node_modal").style.display = "flex";  
+
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#html").style.display = "none";
+                }
+
+                html_.onclick = function(){
+                    document.querySelector("#html_modal").style.display = "flex";  
+
+                    document.querySelector("#skills_modal").style.display = "none";  
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                }
+    
                 var i = 0;
                 var images = [];
                 var time = 5000;
