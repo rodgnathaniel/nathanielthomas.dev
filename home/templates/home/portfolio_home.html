@@ -80,10 +80,42 @@
                 let node = document.querySelector("#node");
                 let html_ = document.querySelector("#html_");
 
+                let skillclick = false
+
 
                 //functions to open and close modals
 
+                skills.onmouseover = function(){
+                    document.querySelector("#skills_modal").style.display = "flex"; 
+
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none";  
+                }
+
+                skills.onmouseout = function(){
+                    if(skillclick){
+                        document.querySelector("#skills_modal").style.display = "flex"; 
+                    } else {
+
+                    document.querySelector("#skills_modal").style.display = "none"; 
+
+                    document.querySelector("#contact_modal").style.display = "none"; 
+                    document.querySelector("#about_modal").style.display = "none";  
+                    document.querySelector("#dj_modal").style.display = "none"; 
+                    document.querySelector("#py_modal").style.display = "none";  
+                    document.querySelector("#js_modal").style.display = "none";  
+                    document.querySelector("#node_modal").style.display = "none"; 
+                    document.querySelector("#html_modal").style.display = "none";  
+                    }
+                }
+
                 skills.onclick = function(){
+                    skillclick = true
                     document.querySelector("#skills_modal").style.display = "flex"; 
 
                     document.querySelector("#contact_modal").style.display = "none"; 
