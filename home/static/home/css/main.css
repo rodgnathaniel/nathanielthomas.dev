@@ -1,8 +1,21 @@
+/* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+
+/* BACKGROUND IMAGE */
 body{
     background-image:url(/static/home/blue_bg6.png);   
 }
+
+
+/* PAGE FORMAT */
+main{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+/* NAVIGATION BAR SIZING */
 #nav_bg{
     background-color: rgba(0, 0, 0, .7);
     width: 90%;
@@ -11,6 +24,9 @@ body{
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     border-radius: 10px;
 }
+
+
+/* AVATAR, TITLE, LINKS, SLIDESHOW */
 header{
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
@@ -18,10 +34,53 @@ header{
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     border-radius: 10px;
 }
-#contact:hover, #skills:hover, #about:hover{
-    border-color:rgba(255,255,240,.75);
-    background-color: rgba(176,224,230,0.75);
+
+#name {
+    color:ivory;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 10%;
+    font-size: 160%;
 }
+
+h2 {
+    width: 45%;
+    height: 5%;
+    color:ivory;
+    font-size: 115%;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 30%;
+}
+
+#self{
+    border-radius: 50%;
+    border: 5px;
+    border-color: ivory;
+    margin-left: 20%;
+    margin-top: 6%;   
+}
+
+#in, #git{
+    margin: 1%0%5%38%;
+}
+
+#nav_title {
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    flex-wrap:wrap;
+}
+
+#nav_title a:hover{
+    background-color: rgba(255,255,240,.6);
+}
+
+#slideshow {
+    margin-bottom: 5%;
+    margin-left: 7%;
+}
+
+
+/* NAVIGATION BAR BUTTONS */
 #contact, #skills, #about{
     margin-top: 1.3%;
     margin-left: 1%;
@@ -36,66 +95,15 @@ header{
     outline: none;
 
 }
-#in, #git{
-    margin: 1%0%5%38%;
 
-}
-main{
-    display:grid;
-    grid-template-columns: 1fr 4fr;
+/* HOVER AFFECTS FOR NAVIGATION BUTTONS */
+#contact:hover, #skills:hover, #about:hover{
+    border-color:rgba(255,255,240,.75);
+    background-color: rgba(176,224,230,0.75);
 }
 
 
-
-#nav_title {
-    display:flex;
-    flex-direction:column;
-    align-items:left;
-    flex-wrap:wrap;
-}
-#nav_title a:hover{
-    background-color: rgba(255,255,240,.6);
-}
-#nav_buttons{
-    padding-top: 3%;
-    height: 25%;
-    width: 40%;
-    margin-left: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#name {
-    color:ivory;
-    font-family: 'Amatic SC', cursive;
-    margin-left: 10%;
-    font-size: 160%;
-
-}
-h2 {
-    width: 45%;
-    height: 5%;
-    color:ivory;
-    font-size: 115%;
-    font-family: 'Amatic SC', cursive;
-    margin-left: 30%;
-
-}
-#self{
-    
-    border-radius: 50%;
-    border: 5px;
-    border-color: ivory;
-    margin-left: 20%;
-    margin-top: 6%;
-      
-}
-#slideshow {
-    margin-bottom: 5%;
-    margin-left: 7%;
-    
-}
+/* MODAL LINKED TO CONTACT BUTTON */
 #contact_modal {
     width: 71%;
     height: 59.5%;
@@ -122,6 +130,8 @@ h2 {
     margin-top: 2%;
 }
 
+
+/* MODAL LINKED TO ABOUT BUTTON */
 #about_modal {
     width: 71%;
     height: 59.5%;
@@ -212,6 +222,7 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+
 #py_modal {
     width: 71%;
     height: 59.5%;
@@ -227,6 +238,7 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+
 #js_modal {
     width: 71%;
     height: 59.5%;
@@ -242,6 +254,7 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+
 #node_modal {
     width: 71%;
     height: 59.5%;
@@ -257,6 +270,7 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+
 #html_modal {
     width: 71%;
     height: 59.5%;
@@ -272,6 +286,9 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+
+
+/* CLOSE BUTTON  */
 .close {
     position: absolute;
     top: 0;
