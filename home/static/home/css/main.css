@@ -60,7 +60,7 @@ h2 {
 }
 
 #in, #git{
-    margin: 1%0%5%38%;
+    margin: 1%50%5%38%;
 }
 
 #nav_title {
@@ -68,10 +68,13 @@ h2 {
     flex-direction:column;
     align-items:left;
     flex-wrap:wrap;
+    background-size: 25% 25%;
 }
 
-#nav_title a:hover{
-    background-color: rgba(255,255,240,.6);
+#nav_title a:hover{ 
+    border-color:rgba(255,255,240,.8);
+    background-color: rgba(176,224,230,0.4);
+    border-radius: 12%;
 }
 
 #slideshow {
@@ -98,7 +101,7 @@ h2 {
 
 /* HOVER AFFECTS FOR NAVIGATION BUTTONS */
 #contact:hover, #skills:hover, #about:hover{
-    border-color:rgba(255,255,240,.75);
+    border-color:rgba(255,255,240,.8);
     background-color: rgba(176,224,230,0.75);
 }
 
@@ -126,6 +129,12 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 170%;
 }
+#contact_modal a:hover{
+    border-color:rgba(255,255,240,.8);
+    background-color: rgba(176,224,230,0.4);
+    border-radius: 12%;
+    margin:5%,0%,5%,0%;
+}
 #contact_txt{
     margin-top: 2%;
 }
@@ -148,8 +157,10 @@ h2 {
     align-items: center;
 }
 #about_modal span{
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 7%;
+    padding-right: 18%;
+    padding-bottom: 10%;
+    padding-left: 18%;
     color: ivory;
     font-family: 'Amatic SC', cursive;
     font-size: 170%;
