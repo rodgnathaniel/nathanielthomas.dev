@@ -26,6 +26,7 @@
                 <button id="contact">Contact</button>
                 <button id="about">About Me</button>
             </div>
+
             <div id="skills_modal">
                 <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
                 <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
@@ -87,34 +88,15 @@
                 let skillclick = false
 
 
-                //functions to open and close modals
-
-                skills.onmouseover = function(){
-                    skillclick = true
-                    document.querySelector("#skills_modal").style.display = "flex"; 
-                }
-
-                skills.onmouseout = function(){
-                    if(skillclick){
-                        document.querySelector("#skills_modal").style.display = "flex"; 
-                    } else {
-
-                    document.querySelector("#skills_modal").style.display = "none";
-                    skillclick = false 
-
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none";  
-                    }
-                }
+      
 
                 skills.onclick = function(){
-                    skillclick = true
-                    document.querySelector("#skills_modal").style.display = "flex"; 
+                    if(skillclick){
+                        document.querySelector("#skills_modal").style.display = "none"; 
+                        skillclick = false
+                    } else {
+                        skillclick = true
+                        document.querySelector("#skills_modal").style.display = "flex"; 
 
                     // document.querySelector("#contact_modal").style.display = "none"; 
                     // document.querySelector("#about_modal").style.display = "none";  
@@ -123,6 +105,7 @@
                     // document.querySelector("#js_modal").style.display = "none";  
                     // document.querySelector("#node_modal").style.display = "none"; 
                     // document.querySelector("#html_modal").style.display = "none";  
+                }
                 }
 
                 contact.onclick = function(){
@@ -151,6 +134,7 @@
                 }
 
                 dj.onclick = function(){
+                    skillclick = false
                     document.querySelector("#dj_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -163,6 +147,7 @@
                 }
 
                 py.onclick = function(){
+                    skillclick = false
                     document.querySelector("#py_modal").style.display = "flex"; 
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -175,6 +160,7 @@
                 }
 
                 js.onclick = function(){
+                    skillclick = false
                     document.querySelector("#js_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -187,6 +173,7 @@
                 }
 
                 node.onclick = function(){
+                    skillclick = false
                     document.querySelector("#node_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -199,6 +186,7 @@
                 }
 
                 html_.onclick = function(){
+                    skillclick = false
                     document.querySelector("#html_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
