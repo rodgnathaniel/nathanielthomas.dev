@@ -4,7 +4,6 @@ body{
     background-image:url(/static/home/blue_bg6.png);   
 }
 #nav_bg{
-
     background-color: rgba(0, 0, 0, .7);
     width: 90%;
     height: 18%;
@@ -12,19 +11,16 @@ body{
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     border-radius: 10px;
 }
-#skills_bg{
-
-    background-color: rgba(0, 0, 0, .7);
-    width: 18%;
-    height: 90%;
-    margin-left: 1%;
-}
 header{
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
     height: 100%;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     border-radius: 10px;
+}
+#contact:hover, #skills:hover, #about:hover{
+    border-color:rgba(255,255,240,.75);
+    background-color: rgba(176,224,230,0.75);
 }
 #contact, #skills, #about{
     margin-top: 1.3%;
@@ -36,6 +32,8 @@ header{
     font-family: 'Amatic SC', cursive;
     font-size: 160%;
     cursor:pointer;
+    overflow: hidden;  
+    outline: none;
 
 }
 #in, #git{
@@ -54,6 +52,9 @@ main{
     flex-direction:column;
     align-items:left;
     flex-wrap:wrap;
+}
+#nav_title a:hover{
+    background-color: rgba(255,255,240,.6);
 }
 #nav_buttons{
     padding-top: 3%;
@@ -143,6 +144,59 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 170%;
 }
+
+
+/* MODAL LINKED TO SKILLS BUTTON */
+#skills_modal {
+    width: 9%;
+    height: 57%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    left:25.8%;
+    top:45.5%;
+    transform: translate(-50%, -50%);
+    z-index:5;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
+    padding-top: .5%;
+}
+
+#skills_modal a:hover{
+    background-color: rgba(255,255,240,.6);
+    border-color:rgba(176,224,230,0.75);
+}
+
+
+/* ICONS INSIDE OF SKILLS MODAL */
+#dj{
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+#py{
+    padding-top: 9%;
+    padding-left: 26%;
+    padding-bottom: 9%;
+}
+#js{
+    padding-top: 9%;
+    padding-left: 19%;
+    padding-bottom: 9%;
+}
+#node{
+    padding-top: 9%;
+    padding-left: 12%;
+    padding-bottom: 9%;
+}
+#html_{
+    padding-top: 9%;
+    padding-left: 20%;
+    padding-bottom: 9%;
+}
+
+
+/* MODALS LINKED TO SKILLS MODAL ICONS */
 #dj_modal {
     width: 71%;
     height: 59.5%;
@@ -217,42 +271,6 @@ h2 {
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
-}
-#skills_modal {
-    width: 9%;
-    height: 59.7%;
-    background-color: rgba(0, 0, 0, .7);
-    position: absolute;
-    left:25.8%;
-    top:45.5%;
-    transform: translate(-50%, -50%);
-    z-index:5;
-    border-radius: 10px;
-    display: none;
-    flex-direction: column;
-    box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
-}
-#skills_modal a{
-    
-}
-#dj{
-    padding-top: 18%;
-}
-#py{
-    padding-top: 15%;
-    padding-left: 26%;
-}
-#js{
-    padding-top: 17%;
-    padding-left: 19%;
-}
-#node{
-    padding-top: 17%;
-    padding-left: 12%;
-}
-#html_{
-    padding-top: 17%;
-    padding-left: 20%;
 }
 .close {
     position: absolute;
