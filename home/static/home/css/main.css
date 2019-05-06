@@ -62,6 +62,14 @@ h2 {
 #in, #git{
     margin: 1%50%5%38%;
 }
+#gittip{ 
+    background-color: rgba(0, 0, 0, .7);
+    color:ivory;
+    font-family: 'Amatic SC', cursive;
+    z-index: 25;
+    top: 50%;
+    left: 50%;
+}
 
 #nav_title {
     display:flex;
@@ -194,6 +202,12 @@ h2 {
 #dj{
     padding-top: 9%;
     padding-bottom: 9%;
+}
+#dj span{
+    display: none;
+}
+#dj span:hover{
+    display:block;
 }
 #py{
     padding-top: 9%;

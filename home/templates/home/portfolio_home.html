@@ -18,6 +18,7 @@
                         <img name="slide" width="210" height="110">
                     </div>
                 </div>
+        
 
         </header>  
         <div id="nav_bg">
@@ -70,8 +71,17 @@
         
             </div>
         </div>
+
+        <!-- <span id="gittip">Github</span>
+        <span id="intip">Linkedin</span>
+        <span id="djtip">Django</span>
+        <span id="pytip">Python</span>
+        <span id="jstip">JavaScript</span>
+        <span id="nodetip">Node.js</span>
+        <span id="htmltip">HTML5</span> -->
  
     </main>
+
        
 
             <script>
@@ -84,6 +94,10 @@
                 let js = document.querySelector("#js");
                 let node = document.querySelector("#node");
                 let html_ = document.querySelector("#html_");
+
+
+
+
 
                 let skillclick = false
 
@@ -189,6 +203,34 @@
                     document.querySelector("#js_modal").style.display = "none";  
                     document.querySelector("#node_modal").style.display = "none"; 
                 }
+
+
+
+
+                let git = document.querySelector("#git");
+
+                git.onmouseover = function(){
+                    document.querySelector("#gittip").style.display = "flex";  
+                }
+                git.onmouseout = function(){
+                    document.querySelector("#gittip").style.display = "none";  
+                }
+
+                dj.onmouseover = function(){
+                    document.querySelector("#djtip").style.display = "flex";  
+                }
+                dj.onmouseout = function(){
+                    document.querySelector("#djtip").style.display = "none";  
+                }
+
+                py.onmouseover = function(){
+                    document.querySelector("#pytip").style.display = "flex";  
+                }
+                py.onmouseout = function(){
+                    document.querySelector("#pytip").style.display = "none";  
+                }
+
+                
 
 
 
