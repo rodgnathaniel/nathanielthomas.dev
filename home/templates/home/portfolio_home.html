@@ -43,6 +43,8 @@
             </div>
 
             <div id="about_modal">
+                <span>Hi, my name is Nathaniel; I am a 21 year old certified software developer & Portland local. Currently I am proficient in Python, JavaScript, Django, HTML5, and CSS; while continuing tbuilding my portfolio as well as looking for industry experience. I am cure
+                        When I am not working on the computer I love skiing, backpacking, writing and playing the piano. I am a mindful, organized, intuitive individual with an approachable and non judgmental personality; which I believe works well for almost any work environment.</span>
 
             </div>
             <div id="dj_modal">
@@ -86,15 +88,8 @@
                 //functions to open and close modals
 
                 skills.onmouseover = function(){
+                    skillclick = true
                     document.querySelector("#skills_modal").style.display = "flex"; 
-
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none";  
                 }
 
                 skills.onmouseout = function(){
@@ -102,7 +97,8 @@
                         document.querySelector("#skills_modal").style.display = "flex"; 
                     } else {
 
-                    document.querySelector("#skills_modal").style.display = "none"; 
+                    document.querySelector("#skills_modal").style.display = "none";
+                    skillclick = false 
 
                     document.querySelector("#contact_modal").style.display = "none"; 
                     document.querySelector("#about_modal").style.display = "none";  
@@ -118,13 +114,13 @@
                     skillclick = true
                     document.querySelector("#skills_modal").style.display = "flex"; 
 
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none";  
+                    // document.querySelector("#contact_modal").style.display = "none"; 
+                    // document.querySelector("#about_modal").style.display = "none";  
+                    // document.querySelector("#dj_modal").style.display = "none"; 
+                    // document.querySelector("#py_modal").style.display = "none";  
+                    // document.querySelector("#js_modal").style.display = "none";  
+                    // document.querySelector("#node_modal").style.display = "none"; 
+                    // document.querySelector("#html_modal").style.display = "none";  
                 }
 
                 contact.onclick = function(){

@@ -15,8 +15,8 @@ body{
 #skills_bg{
 
     background-color: rgba(0, 0, 0, .7);
-    width: 90%;
-    height: 18%;
+    width: 18%;
+    height: 90%;
     margin-left: 1%;
 }
 header{
@@ -136,6 +136,13 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
 }
+#about_modal span{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 170%;
+}
 #dj_modal {
     width: 71%;
     height: 59.5%;
@@ -212,35 +219,40 @@ h2 {
     align-items: center;
 }
 #skills_modal {
-    width: 36%;
-    height: 12%;
+    width: 9%;
+    height: 59.7%;
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
-    left:39%;
-    top:22%;
+    left:25.8%;
+    top:45.5%;
     transform: translate(-50%, -50%);
     z-index:5;
     border-radius: 10px;
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
 }
+#skills_modal a{
+    
+}
 #dj{
-    padding-top: 2.4%;
+    padding-top: 18%;
 }
 #py{
-    padding-top: 2.6%;
+    padding-top: 15%;
+    padding-left: 26%;
 }
 #js{
-    margin:0%2.2%0%4.4%;
-    padding-top: 2.6%;
+    padding-top: 17%;
+    padding-left: 19%;
 }
 #node{
-    margin: 0%3%0%0%;
-    padding-top: 1.7%;
+    padding-top: 17%;
+    padding-left: 12%;
 }
 #html_{
-    padding-top: 3.4%;
+    padding-top: 17%;
+    padding-left: 20%;
 }
 .close {
     position: absolute;
