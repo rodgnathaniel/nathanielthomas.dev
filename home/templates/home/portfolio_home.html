@@ -113,10 +113,12 @@
                     } else {
                         skillclick = true
                         document.querySelector("#skills_modal").style.display = "flex"; 
-                }
+                    }
                 }
 
                 contact.onclick = function(){
+                    skillclick = false
+
                     document.querySelector("#contact_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -130,6 +132,8 @@
                 }
 
                 about.onclick = function(){
+                    skillclick = false
+
                     document.querySelector("#about_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -143,6 +147,7 @@
 
                 dj.onclick = function(){
                     skillclick = false
+
                     document.querySelector("#dj_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -156,6 +161,7 @@
 
                 py.onclick = function(){
                     skillclick = false
+
                     document.querySelector("#py_modal").style.display = "flex"; 
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -169,6 +175,7 @@
 
                 js.onclick = function(){
                     skillclick = false
+
                     document.querySelector("#js_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -182,6 +189,7 @@
 
                 node.onclick = function(){
                     skillclick = false
+
                     document.querySelector("#node_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -195,6 +203,7 @@
 
                 html_.onclick = function(){
                     skillclick = false
+
                     document.querySelector("#html_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
@@ -209,28 +218,28 @@
 
 
 
-                let git = document.querySelector("#git");
+                // let git = document.querySelector("#git");
 
-                git.onmouseover = function(){
-                    document.querySelector("#gittip").style.display = "flex";  
-                }
-                git.onmouseout = function(){
-                    document.querySelector("#gittip").style.display = "none";  
-                }
+                // git.onmouseover = function(){
+                //     document.querySelector("#gittip").style.display = "flex";  
+                // }
+                // git.onmouseout = function(){
+                //     document.querySelector("#gittip").style.display = "none";  
+                // }
 
-                dj.onmouseover = function(){
-                    document.querySelector("#djtip").style.display = "flex";  
-                }
-                dj.onmouseout = function(){
-                    document.querySelector("#djtip").style.display = "none";  
-                }
+                // dj.onmouseover = function(){
+                //     document.querySelector("#djtip").style.display = "flex";  
+                // }
+                // dj.onmouseout = function(){
+                //     document.querySelector("#djtip").style.display = "none";  
+                // }
 
-                py.onmouseover = function(){
-                    document.querySelector("#pytip").style.display = "flex";  
-                }
-                py.onmouseout = function(){
-                    document.querySelector("#pytip").style.display = "none";  
-                }
+                // py.onmouseover = function(){
+                //     document.querySelector("#pytip").style.display = "flex";  
+                // }
+                // py.onmouseout = function(){
+                //     document.querySelector("#pytip").style.display = "none";  
+                // }
 
                 
 
