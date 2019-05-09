@@ -130,6 +130,7 @@ h2 {
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
+    animation: fadeIn 1s;
 } 
 #contact_modal span, a{
     padding-top: 2%;
@@ -333,6 +334,7 @@ h2 {
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
+    animation: fadeIn 1s;
 }
 
 
