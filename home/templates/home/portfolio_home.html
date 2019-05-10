@@ -38,12 +38,10 @@
 
             <div id="contact_modal">
                 <span id="contact_text">Feel free to contact me!</span>
-                <!-- <img src="{% static 'home/email.png' %}" width="115" height="60"> -->
-                <span id="email">pdx@nathanielthomas.dev</span>
-                <!-- <img src="{% static 'home/phone.png' %}" width="115" height="60"> -->
-                <span id="phone">541.646.5895</span>
-                <a class="links" href="https://github.com/rodgnathaniel" target="_blank">Github</a>
-                <a class="links" href="https://www.linkedin.com/in/nathaniel-rodgers-109104170/" target="_blank">Linkedin</a>
+                <img id="email_img" src="{% static 'home/email.png' %}" width="65" height="65">
+                <span id="email" type="text">pdx@nathanielthomas.dev</span>
+                <img id="phone_img" src="{% static 'home/phone.jpg' %}" width="65" height="65">
+                <span id="phone" type="text">541.646.5895</span>
             </div>
 
             <div id="about_modal">
@@ -112,6 +110,14 @@
 
 
                 let skillclick = false
+
+                let phone_img = document.querySelector("#phone_img");
+                let phone = document.querySelector("#phone");
+
+                phone_img.onclick = function(){
+                    phone.select();
+                    document.execCommand("Copy");
+                }
 
 
       
