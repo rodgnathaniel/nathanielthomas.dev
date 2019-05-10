@@ -54,6 +54,9 @@
 
             </div>
             <div id="dj_modal">
+                <span>A full-stack puzzle game built using Django. Uses speech recogntion API to control game hands free if desired; includes login/logout system 
+                    and gives player the ability to save their game in back for later gameplay. </span>
+                <img name="constantine" width="500" height="280">
 
             </div>
 
@@ -281,6 +284,31 @@
                 }
 
                 window.onload = imgchange();
+
+
+
+                var c = 0;
+                var c_images = [];
+                var c_time = 3500;
+
+                c_images[0] = "{% static 'home/constantine_pre.png' %}";
+                c_images[1] = "{% static 'home/constantine_pre2.png' %}";
+                c_images[2] = "{% static 'home/constantine_pre3.png' %}";
+                
+
+                function c_imgchange(){
+                    document.constantine.src = c_images[i];
+
+                    if(i < c_images.length - 1){
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    
+                    setTimeout("c_imgchange()", c_time);
+                }
+
+                window.onload = c_imgchange();
                                   
             </script>
 
