@@ -267,12 +267,12 @@
                 c_images[3] = "{% static 'home/constantine_pre4.png' %}";
 
                 function c_imgchange(){
-                    document.constantine.src = c_images[i];
+                    document.constantine.src = c_images[c];
 
-                    if(i < c_images.length - 1){
-                        i++;
+                    if(c < c_images.length - 1){
+                        c++;
                     } else {
-                        i = 0;
+                        c = 0;
                     }
                     
                     setTimeout("c_imgchange()", c_time);
@@ -283,29 +283,29 @@
 
                 //python farming
                 var f = 0;
-                var f_images = [];
-                var f_time = 8000;
-                f_images[0] = "{% static 'home/farm8.png' %}";
-                f_images[1] = "{% static 'home/farm7.png' %}";
-                f_images[2] = "{% static 'home/farm2.png' %}";
-                f_images[3] = "{% static 'home/farm3.png' %}";
-                f_images[4] = "{% static 'home/farm4.png' %}";
-                f_images[5] = "{% static 'home/farm5.png' %}";
-                f_images[6] = "{% static 'home/farm6.png' %}";
+                var farm_images = [];
+                var farm_time = 6000;
+                farm_images[0] = "{% static 'home/farm8.png' %}";
+                farm_images[1] = "{% static 'home/farm7.png' %}";
+                farm_images[2] = "{% static 'home/farm2.png' %}";
+                farm_images[3] = "{% static 'home/farm3.png' %}";
+                farm_images[4] = "{% static 'home/farm4.png' %}";
+                farm_images[5] = "{% static 'home/farm5.png' %}";
+                farm_images[6] = "{% static 'home/farm6.png' %}";
 
-                function f_imgchange(){
-                    document.farm.src = f_images[i];
+                function farm_imgchange(){
+                    document.farm.src = farm_images[f];
 
-                    if(i < f_images.length - 1){
-                        i++;
+                    if(f < farm_images.length - 1){
+                        f++;
                     } else {
-                        i = 0;
+                        f = 0;
                     }
                     
-                    setTimeout("f_imgchange()", f_time);
+                    setTimeout("farm_imgchange()", farm_time);
                 }
 
-                window.onload = f_imgchange();
+                window.onload = farm_imgchange();
                                   
             </script>
 
