@@ -87,7 +87,8 @@
        
 
             <script>
-
+                
+                //declaring buttons
                 let skills = document.querySelector("#skills");
                 let contact = document.querySelector("#contact");
                 let about = document.querySelector("#about");
@@ -97,6 +98,18 @@
                 let node = document.querySelector("#node");
                 let html_ = document.querySelector("#html_");
 
+                // declaring modals
+                 
+                let skills_modal = document.querySelector("#skills_modal"); 
+                let contact_modal = document.querySelector("#contact_modal");
+                let about_modal = document.querySelector("#about_modal"); 
+                let dj_modal = document.querySelector("#dj_modal"); 
+                let py_modal = document.querySelector("#py_modal"); 
+                let jd_modal = document.querySelector("#js_modal");
+                let node_modal = document.querySelector("#node_modal");
+                let html_modal = document.querySelector("#html_modal");
+
+
                 let skillclick = false
 
 
@@ -104,26 +117,28 @@
 
                 skills.onclick = function(){
                     if(skillclick){
-                        document.querySelector("#skills_modal").style.display = "none"; 
+                        skills_modal.style.display = "none";
+                        
+
                         skillclick = false
                     } else {
                         skillclick = true
-                        document.querySelector("#skills_modal").style.display = "flex"; 
+                        skills_modal.style.display = "flex"; 
                     }
                 }
 
                 contact.onclick = function(){
                     skillclick = false
 
-                    document.querySelector("#contact_modal").style.display = "flex";  
+                    contact_modal.style.display = "flex";  
 
-                    document.querySelector("#skills_modal").style.display = "none";  
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none"; 
+                    skills_modal.style.display = "none";  
+                    about_modal.style.display = "none";  
+                    dj_modal.style.display = "none"; 
+                    py_modal.style.display = "none";  
+                    js_modal.style.display = "none";  
+                    node_modal.style.display = "none"; 
+                    html_modal.style.display = "none"; 
                     
                 }
 
@@ -132,13 +147,13 @@
 
                     document.querySelector("#about_modal").style.display = "flex";  
 
-                    document.querySelector("#skills_modal").style.display = "none";  
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none"; 
+                    skills_modal").style.display = "none";  
+                    contact_modal").style.display = "none"; 
+                    dj_modal").style.display = "none"; 
+                    py_modal").style.display = "none";  
+                    js_modal").style.display = "none";  
+                    node_modal").style.display = "none"; 
+                    html_modal").style.display = "none"; 
                 }
 
                 dj.onclick = function(){
@@ -146,13 +161,13 @@
 
                     document.querySelector("#dj_modal").style.display = "flex";  
 
-                    document.querySelector("#skills_modal").style.display = "none";  
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
-                    document.querySelector("#html_modal").style.display = "none"; 
+                    skills_modal").style.display = "none";  
+                    contact_modal").style.display = "none"; 
+                    about_modal").style.display = "none";  
+                    py_modal").style.display = "none";  
+                    js_modal").style.display = "none";  
+                    node_modal").style.display = "none"; 
+                    html_modal").style.display = "none"; 
                 }
 
                 py.onclick = function(){
@@ -189,26 +204,26 @@
                     document.querySelector("#node_modal").style.display = "flex";  
 
                     document.querySelector("#skills_modal").style.display = "none";  
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#html_modal").style.display = "none";
+                    contact_modal").style.display = "none"; 
+                    about_modal").style.display = "none";  
+                    dj_modal").style.display = "none"; 
+                    py_modal").style.display = "none";  
+                    js_modal").style.display = "none";  
+                    html_modal.style.display = "none";
                 }
 
                 html_.onclick = function(){
                     skillclick = false
 
-                    document.querySelector("#html_modal").style.display = "flex";  
+                    html_modal.style.display = "flex";  
 
-                    document.querySelector("#skills_modal").style.display = "none";  
-                    document.querySelector("#contact_modal").style.display = "none"; 
-                    document.querySelector("#about_modal").style.display = "none";  
-                    document.querySelector("#dj_modal").style.display = "none"; 
-                    document.querySelector("#py_modal").style.display = "none";  
-                    document.querySelector("#js_modal").style.display = "none";  
-                    document.querySelector("#node_modal").style.display = "none"; 
+                    skills_modal.style.display = "none";  
+                    contact_modal.style.display = "none"; 
+                    about_modal.style.display = "none";  
+                    dj_modal.style.display = "none"; 
+                    py_modal.style.display = "none";  
+                    js_modal.style.display = "none";  
+                    node_modal.style.display = "none"; 
                 }
 
 
