@@ -141,9 +141,8 @@ h2 {
 }
 #contact_modal a:hover{
     border-color:rgba(255,255,240,.8);
-    background-color: rgba(176,224,230,0.4);
+    background-color: rgba(255,255,240,.3);
     border-radius: 12%;
-    margin:5%,0%,5%,0%;
 }
 #contact_txt{
     margin-top: 2%;
@@ -285,7 +284,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
-#dj_modal h1{
+#dj_modal a{
     padding-top: 1%;
     padding-right: 14%;
     /* padding-bottom: 1%; */
@@ -293,6 +292,12 @@ h2 {
     color: ivory;
     font-family: 'Amatic SC', cursive;
     font-size: 140%;
+}
+#dj_modal a:hover{
+    border-color:rgba(255,255,240,.8);
+    background-color: rgba(255,255,240,.3);
+    border-radius: 12%;
+ 
 }
 #dj_modal span{
     /* padding-top: 1%; */

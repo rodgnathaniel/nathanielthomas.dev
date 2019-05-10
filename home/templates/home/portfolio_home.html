@@ -54,14 +54,15 @@
 
             </div>
             <div id="dj_modal">
-                <h1>Constantine</h1>
-                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control game hands free if desired; includes login/logout system 
+                <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
+                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system 
                     and gives player the ability to save their game in database for later gameplay. </span>
                 <img name="constantine" width="500" height="280">
 
             </div>
 
             <div id="py_modal">
+                <img name="farm" width="350" height="250">
                 
             </div>
 
@@ -310,6 +311,33 @@
                 }
 
                 window.onload = c_imgchange();
+
+
+                var f = 0;
+                var f_images = [];
+                var f_time = 8000;
+                f_images[0] = "{% static 'home/farm8.png' %}";
+                f_images[1] = "{% static 'home/farm7.png' %}";
+                f_images[2] = "{% static 'home/farm.png' %}";
+                f_images[3] = "{% static 'home/farm2.png' %}";
+                f_images[4] = "{% static 'home/farm3.png' %}";
+                f_images[5] = "{% static 'home/farm4.png' %}";
+                f_images[6] = "{% static 'home/farm5.png' %}";
+                f_images[7] = "{% static 'home/farm6.png' %}";
+
+                function f_imgchange(){
+                    document.farm.src = f_images[i];
+
+                    if(i < f_images.length - 1){
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    
+                    setTimeout("f_imgchange()", f_time);
+                }
+
+                window.onload = f_imgchange();
                                   
             </script>
 
