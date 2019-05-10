@@ -287,7 +287,6 @@ h2 {
 #dj_modal a{
     padding-top: 1%;
     padding-right: 14%;
-    /* padding-bottom: 1%; */
     padding-left: 14%;
     color: ivory;
     font-family: 'Amatic SC', cursive;
@@ -300,7 +299,6 @@ h2 {
  
 }
 #dj_modal span{
-    /* padding-top: 1%; */
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -324,6 +322,28 @@ h2 {
     box-shadow: 0 0 10px 0 rgba(211,211,211,.7);
     align-items: center;
     animation: fadeIn 1s;
+}
+#py_modal a{
+    padding-top: 1%;
+    padding-right: 14%;
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 140%;
+}
+#py_modal a:hover{
+    border-color:rgba(255,255,240,.8);
+    background-color: rgba(255,255,240,.3);
+    border-radius: 12%;
+ 
+}
+#py_modal span{
+    padding-right: 14%;
+    padding-bottom: 1%;
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 110%;
 }
 
 #js_modal {

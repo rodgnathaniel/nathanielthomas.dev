@@ -62,6 +62,11 @@
             </div>
 
             <div id="py_modal">
+                <a href="https://github.com/rodgnathaniel/Python/blob/master/python_solutions/farming_simulator.py" target="_blank">Python Farming Simulator</a>
+                <span>A class based Python game where the user earns money from completing farming tasks while maintaining healthy levels of sleep and
+                    cleanliness to keep from loosing. The user can spend money on upgrading their farm as well as gambling it playing Black 
+                    Jack. The game runs inside of While True loop that calls the classes by giving String inputs. 
+                </span>
                 <img name="farm" width="350" height="250">
                 
             </div>
@@ -78,15 +83,6 @@
         
             </div>
         </div>
-
-        <!-- <span id="gittip">Github</span>
-        <span id="intip">Linkedin</span>
-        <span id="djtip">Django</span>
-        <span id="pytip">Python</span>
-        <span id="jstip">JavaScript</span>
-        <span id="nodetip">Node.js</span>
-        <span id="htmltip">HTML5</span> -->
- 
     </main>
 
        
@@ -234,37 +230,9 @@
                     node_modal.style.display = "none"; 
                 }
 
+                // js image slide shows    
 
-
-
-                // let git = document.querySelector("#git");
-
-                // git.onmouseover = function(){
-                //     document.querySelector("#gittip").style.display = "flex";  
-                // }
-                // git.onmouseout = function(){
-                //     document.querySelector("#gittip").style.display = "none";  
-                // }
-
-                // dj.onmouseover = function(){
-                //     document.querySelector("#djtip").style.display = "flex";  
-                // }
-                // dj.onmouseout = function(){
-                //     document.querySelector("#djtip").style.display = "none";  
-                // }
-
-                // py.onmouseover = function(){
-                //     document.querySelector("#pytip").style.display = "flex";  
-                // }
-                // py.onmouseout = function(){
-                //     document.querySelector("#pytip").style.display = "none";  
-                // }
-
-                
-
-
-
-                // js image slide show    
+                //header
                 var i = 0;
                 var images = [];
                 var time = 5000;
@@ -288,7 +256,7 @@
                 window.onload = imgchange();
 
 
-
+                //django constantine
                 var c = 0;
                 var c_images = [];
                 var c_time = 4000;
@@ -313,17 +281,17 @@
                 window.onload = c_imgchange();
 
 
+                //python farming
                 var f = 0;
                 var f_images = [];
                 var f_time = 8000;
                 f_images[0] = "{% static 'home/farm8.png' %}";
                 f_images[1] = "{% static 'home/farm7.png' %}";
-                f_images[2] = "{% static 'home/farm.png' %}";
-                f_images[3] = "{% static 'home/farm2.png' %}";
-                f_images[4] = "{% static 'home/farm3.png' %}";
-                f_images[5] = "{% static 'home/farm4.png' %}";
-                f_images[6] = "{% static 'home/farm5.png' %}";
-                f_images[7] = "{% static 'home/farm6.png' %}";
+                f_images[2] = "{% static 'home/farm2.png' %}";
+                f_images[3] = "{% static 'home/farm3.png' %}";
+                f_images[4] = "{% static 'home/farm4.png' %}";
+                f_images[5] = "{% static 'home/farm5.png' %}";
+                f_images[6] = "{% static 'home/farm6.png' %}";
 
                 function f_imgchange(){
                     document.farm.src = f_images[i];
