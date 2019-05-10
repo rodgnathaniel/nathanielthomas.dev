@@ -285,6 +285,24 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+#dj_modal h1{
+    padding-top: 1%;
+    padding-right: 14%;
+    /* padding-bottom: 1%; */
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 140%;
+}
+#dj_modal span{
+    /* padding-top: 1%; */
+    padding-right: 14%;
+    padding-bottom: 1%;
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 110%;
+}
 
 #py_modal {
     width: 71%;

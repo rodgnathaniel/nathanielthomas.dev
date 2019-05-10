@@ -54,8 +54,9 @@
 
             </div>
             <div id="dj_modal">
-                <span>A full-stack puzzle game built using Django. Uses speech recogntion API to control game hands free if desired; includes login/logout system 
-                    and gives player the ability to save their game in back for later gameplay. </span>
+                <h1>Constantine</h1>
+                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control game hands free if desired; includes login/logout system 
+                    and gives player the ability to save their game in database for later gameplay. </span>
                 <img name="constantine" width="500" height="280">
 
             </div>
@@ -289,12 +290,12 @@
 
                 var c = 0;
                 var c_images = [];
-                var c_time = 3500;
+                var c_time = 4000;
 
                 c_images[0] = "{% static 'home/constantine_pre.png' %}";
                 c_images[1] = "{% static 'home/constantine_pre2.png' %}";
                 c_images[2] = "{% static 'home/constantine_pre3.png' %}";
-                
+                c_images[3] = "{% static 'home/constantine_pre4.png' %}";
 
                 function c_imgchange(){
                     document.constantine.src = c_images[i];
