@@ -117,16 +117,16 @@
 
                 skills.onclick = function(){
                     if(skillclick){
-                        skills_modal.style.display = "none";
-                        skills_modal.id = "skills_modal"
                         
-                        
-
+                        // skills_modal.id = "skills_modal"
+                        skills_modal.id = "skills_modal2"
                         skillclick = false
+                        skills_modal.style.display = "none";
                     } else {
+                        skills_modal.id = "skills_modal"
                         skillclick = true
                         skills_modal.style.display = "flex"; 
-                        skills_modal.id = "skills_modal2"
+                        
                     }
                 }
 
