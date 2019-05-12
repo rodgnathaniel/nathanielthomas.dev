@@ -18,9 +18,9 @@
                         <img name="slide" width="210" height="110">
                     </div>
                 </div>
-        
 
         </header>  
+
         <div id="nav_bg">
             <div id="nav_btn">
                 <button id="skills">Skills</button>
@@ -48,14 +48,16 @@
                 <span>Hi, my name is Nathaniel; I am a certified software developer & Portland local. Currently proficient in Python, JavaScript, Django, HTML5, 
                     and CSS for building full-stack applications. I have been fully immersed, continuously learning, strengthening my portfolio 
                     everyday; I cannot wait to see what my future in the tech industry has to bring me.</br>I would define myself as a curious, mindful, 
-                    organized, and intuitive individual with an approachable, non judgmental personality.</span>
-
+                    organized, and intuitive individual with an approachable, non judgmental personality.
+                </span>
             </div>
+
             <div id="dj_modal">
                 <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
-                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system 
-                    and gives player the ability to save their game in database for later gameplay. </span>
-                <img name="constantine" width="500" height="280">
+                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system, 
+                    in-game mini games, and gives player the ability to save their game through JSON in database for later gameplay. 
+                </span>
+                <img name="constantine" width="400" height="280">
 
             </div>
 
@@ -80,10 +82,11 @@
             <div id="html_modal">
         
             </div>
+            
         </div>
     </main>
 
-       
+        <body>
 
             <script>
                 
@@ -108,14 +111,10 @@
                 let node_modal = document.querySelector("#node_modal");
                 let html_modal = document.querySelector("#html_modal");
 
-
                 let skillclick = false
-
 
                 skills.onclick = function(){
                     if(skillclick){
-                        
-                        // skills_modal.id = "skills_modal"
                         skills_modal.id = "skills_modal2"
                         skillclick = false
                         skills_modal.style.display = "none";
@@ -228,7 +227,7 @@
 
                 // js image slide shows    
 
-                //header
+                //header image slide
                 var i = 0;
                 var images = [];
                 var time = 5000;
@@ -252,15 +251,15 @@
                 window.onload = imgchange();
 
 
-                //django constantine
+                //django constantine project slide
                 var c = 0;
                 var c_images = [];
                 var c_time = 4000;
 
-                c_images[0] = "{% static 'home/constantine_pre.png' %}";
-                c_images[1] = "{% static 'home/constantine_pre2.png' %}";
-                c_images[2] = "{% static 'home/constantine_pre3.png' %}";
-                c_images[3] = "{% static 'home/constantine_pre4.png' %}";
+                c_images[0] = "{% static 'home/const_pre.png' %}";
+                c_images[1] = "{% static 'home/const_pre2.png' %}";
+                c_images[2] = "{% static 'home/const_pre3.png' %}";
+                c_images[3] = "{% static 'home/const_pre4.png' %}";
 
                 function c_imgchange(){
                     document.constantine.src = c_images[c];
@@ -277,7 +276,7 @@
                 window.onload = c_imgchange();
 
 
-                //python farming
+                //python farming project slide
                 var f = 0;
                 var farm_images = [];
                 var farm_time = 6000;
@@ -306,4 +305,5 @@
             </script>
 
         </body>
+
 </html>
