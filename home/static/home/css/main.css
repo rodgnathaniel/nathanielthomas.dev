@@ -7,13 +7,11 @@ body{
     background-image:url(/static/home/blue_bg6.png);   
 }
 
-
 /* PAGE FORMAT */
 main{
     display:grid;
     grid-template-columns: 1fr 4fr;
 }
-
 
 /* AVATAR, TITLE, LINKS, SLIDESHOW */
 header{
@@ -51,6 +49,7 @@ h2 {
 #in, #git{
     margin: 1%50%5%38%;
 }
+
 #gittip{ 
     background-color: rgba(0, 0, 0, .7);
     color:ivory;
@@ -114,7 +113,6 @@ h2 {
     color: ivory;
 }
 
-
 /* MODAL LINKED TO CONTACT BUTTON */
 #contact_modal {
     width: 71%;
@@ -132,6 +130,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 } 
+
 #contact_modal span, a{
     padding-top: 3.7%;
     padding-bottom: 2%;
@@ -143,7 +142,6 @@ h2 {
 #contact_txt{
     margin-top: 2%;
 }
-
 
 /* MODAL LINKED TO ABOUT BUTTON */
 #about_modal {
@@ -162,6 +160,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #about_modal span{
     padding-top: 8%;
     padding-right: 18%;
@@ -171,7 +170,6 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 170%;
 }
-
 
 /* MODAL LINKED TO SKILLS BUTTON */
 #skills_modal {
@@ -190,6 +188,7 @@ h2 {
     padding-top: .5%;
     animation: fadeIn 1s;
 }
+
 #skills_modal2 {
     width: 9%;
     height: 57%;
@@ -235,27 +234,33 @@ h2 {
     padding-top: 9%;
     padding-bottom: 9%;
 }
+
 #dj span{
     display: none;
 }
+
 #dj span:hover{
     display:block;
 }
+
 #py{
     padding-top: 9%;
     padding-left: 26%;
     padding-bottom: 9%;
 }
+
 #js{
     padding-top: 9%;
     padding-left: 19%;
     padding-bottom: 9%;
 }
+
 #node{
     padding-top: 9%;
     padding-left: 12%;
     padding-bottom: 9%;
 }
+
 #html_{
     padding-top: 9%;
     padding-left: 20%;
@@ -280,6 +285,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #dj_modal a{
     padding-top: 1%;
     padding-right: 14%;
@@ -288,12 +294,14 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 140%;
 }
+
 #dj_modal a:hover{
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 12%;
  
 }
+
 #dj_modal span{
     padding-right: 14%;
     padding-bottom: 1%;
@@ -319,6 +327,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #py_modal a{
     padding-top: 1%;
     padding-right: 14%;
@@ -327,12 +336,14 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 140%;
 }
+
 #py_modal a:hover{
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 12%;
  
 }
+
 #py_modal span{
     padding-right: 14%;
     padding-bottom: 1%;
