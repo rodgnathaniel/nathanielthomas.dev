@@ -441,6 +441,30 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+#js_modal a{
+    padding-top: 1%;
+    padding-right: 14%;
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 140%;
+}
+
+#js_modal a:hover{
+    border-color:rgba(255,255,240,.8);
+    background-color: rgba(255,255,240,.3);
+    border-radius: 8px;
+ 
+}
+
+#js_modal span{
+    padding-right: 14%;
+    padding-bottom: 1%;
+    padding-left: 14%;
+    color: ivory;
+    font-family: 'Amatic SC', cursive;
+    font-size: 110%;
+}
 
 #node_modal {
     width: 71%;
