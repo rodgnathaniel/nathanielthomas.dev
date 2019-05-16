@@ -6,8 +6,8 @@
 
     </head>
     <main>
+        
         <header>
-
                 <div id="nav_title">
                     <img id="self"src="{% static 'home/self.jpg' %}" height="90" width="140">
                     <h1 id="name">Nathaniel Thomas Rodgers</h1>
@@ -18,9 +18,9 @@
                         <img name="slide" width="210" height="110">
                     </div>
                 </div>
-
         </header>  
 
+<!-- Main Navigation Bar -->
         <div id="nav_bg">
             <div id="nav_btn">
                 <button id="skills">Skills</button>
@@ -28,6 +28,7 @@
                 <button id="about">About Me</button>
             </div>
 
+<!-- Drop Down Menu For Portfolio Pieces -->
             <div id="skills_modal">
                 <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
                 <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
@@ -36,6 +37,7 @@
                 <a id="html_" href="#"><img src="{% static 'home/html.png' %}" width="65" height="50"></a>
             </div>
 
+<!-- Contact Info Section -->
             <div id="contact_modal">
                 <span id="contact_text">Feel free to contact me!</span>
                 <img id="email_img" src="{% static 'home/email.png' %}" width="65" height="65">
@@ -44,6 +46,7 @@
                 <span id="phone">541.646.5895</span>
             </div>
 
+<!-- Self Summary Section -->
             <div id="about_modal">
                 <span>Hi, my name is Nathaniel; I am a certified software developer & Portland local. Currently proficient in Python, JavaScript, Django, HTML5, 
                     and CSS for building full-stack applications. I have been fully immersed, continuously learning, strengthening my portfolio 
@@ -52,21 +55,17 @@
                 </span>
             </div>
 
+<!-- Django Portfolio Section -->
             <div id="dj_modal">
                 <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
                 <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system, 
                     in-game mini games, and gives players the ability to save their game through JSON in database for later gameplay. 
                 </span>
                 <img name="constantine" width="400" height="280">
-
             </div>
-                <div id="py_nav">
-                    <button id="farm_btn">Class Based Game</button>
-                    <button id="crawler_btn">Web Crawler</button>
-                </div>
 
+<!-- Python Portfolio Section  -->
             <div id="py_modal">
-           
                 <a href="https://github.com/rodgnathaniel/Python/blob/master/python_solutions/farming_simulator.py" target="_blank">Python Farming Simulator</a>
                 <span>A class based Python game where the user earns money from completing farming tasks while maintaining healthy levels of sleep and
                     cleanliness to keep from loosing. The user can spend money on upgrading their farm as well as gambling it playing Black 
@@ -74,31 +73,29 @@
                 </span>
                 <img name="farm" width="350" height="250">
             </div>
-            <div id="crawler_modal">
 
-            </div>
-
+<!-- JavaScript Portfolio Section  -->
             <div id="js_modal">
-                    <a href="https://github.com/rodgnathaniel/JavaScript/blob/master/JavaScript_Solutions/atm.html" target="_blank">JavaScript ATM</a>
-                    <span>An ATM program made with JavaScript. Allows user to make deposits and withdrawals as well as keep track of 
-                        transaction history / interest.
-                    </span>
-                    <img name="atm" width="260" height="270">
+                <a href="https://github.com/rodgnathaniel/JavaScript/blob/master/JavaScript_Solutions/atm.html" target="_blank">JavaScript ATM</a>
+                <span>An ATM program made with JavaScript. Allows user to make deposits and withdrawals as well as keep track of 
+                    transaction history / interest.
+                </span>
+                <img name="atm" width="260" height="270">
             </div>
 
+<!-- Node Portfolio Section  -->
             <div id="node_modal">
             
             </div>
 
+<!-- HTML & CSS Portfolio Section  -->
             <div id="html_modal">
         
             </div>
             
         </div>
     </main>
-
         <body>
-
             <script>
                 
                 //declaring buttons
@@ -111,8 +108,7 @@
                 let node = document.querySelector("#node");
                 let html_ = document.querySelector("#html_");
 
-                // declaring modals
-                 
+                //declaring modals
                 let skills_modal = document.querySelector("#skills_modal"); 
                 let contact_modal = document.querySelector("#contact_modal");
                 let about_modal = document.querySelector("#about_modal"); 
@@ -124,6 +120,7 @@
 
                 let skillclick = false
 
+                //open and closing modals with onclick funtions
                 skills.onclick = function(){
                     if(skillclick){
                         skills_modal.id = "skills_modal2"
@@ -236,9 +233,10 @@
                     node_modal.style.display = "none"; 
                 }
 
-                // js image slide shows    
 
-                //header image slide
+                //js image slide shows    
+
+                //header image slidewhow
                 var i = 0;
                 var images = [];
                 var time = 5000;
@@ -262,7 +260,7 @@
                 window.onload = imgchange();
 
 
-                //django constantine project slide
+                //django constantine project slideshows
                 var c = 0;
                 var c_images = [];
                 var c_time = 4000;
@@ -287,7 +285,7 @@
                 window.onload = c_imgchange();
 
 
-                //python farming project slide
+                //python farming project slideshows
                 var f = 0;
                 var farm_images = [];
                 var farm_time = 6000;
@@ -314,6 +312,7 @@
                 window.onload = farm_imgchange();
 
 
+                //JavaScript project slideshows
                 var a = 0;
                 var atm_images = [];
                 var atm_time = 5000;
@@ -337,7 +336,5 @@
                 window.onload = atm_imgchange();
                                   
             </script>
-
         </body>
-
 </html>
