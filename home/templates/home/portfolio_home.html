@@ -1,101 +1,103 @@
 {% load static %}
 <html>
-    <head>
+    <body>
+        <head>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
 
-    </head>
-    <main>
-        
-        <header>
-                <div id="nav_title">
-                    <img id="self"src="{% static 'home/self.jpg' %}" height="90" width="140">
-                    <h1 id="name">Nathaniel Thomas Rodgers</h1>
-                    <h2 id="dev">Web Developer <br/>Portland, Oregon</h2>
-                    <a href="https://github.com/rodgnathaniel" target="_blank" id="git"><img src="{% static 'home/git.png' %}" width="45" height="45"></a>
-                    <a href="https://www.linkedin.com/in/nathaniel-rodgers-109104170/" target="_blank" id="in"><img src="{% static 'home/in.png' %}" width="45" height="45"></a>
-                    <div id="slideshow">
-                        <img name="slide" width="210" height="110">
+        </head>
+            <main>
+
+                <header>
+                        <div id="nav_title">
+                            <img id="self"src="{% static 'home/self.jpg' %}" height="90" width="140">
+                            <h1 id="name">Nathaniel Thomas Rodgers</h1>
+                            <h2 id="dev">Web Developer <br/>Portland, Oregon</h2>
+                            <a href="https://github.com/rodgnathaniel" target="_blank" id="git"><img src="{% static 'home/git.png' %}" width="45" height="45"></a>
+                            <a href="https://www.linkedin.com/in/nathaniel-rodgers-109104170/" target="_blank" id="in"><img src="{% static 'home/in.png' %}" width="45" height="45"></a>
+                            <div id="slideshow">
+                                <img name="slide" width="210" height="110">
+                            </div>
+                        </div>
+                </header>  
+
+        <!-- Main Navigation Bar -->
+                <div id="nav_bg">
+                    <div id="nav_btn">
+                        <button id="skills">Skills</button>
+                        <button id="contact">Contact</button>
+                        <button id="about">About Me</button>
                     </div>
+
+        <!-- Drop Down Menu For Portfolio Pieces -->
+                    <div id="skills_modal">
+                        <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
+                        <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
+                        <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
+                        <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
+                        <a id="html_" href="#"><img src="{% static 'home/html.png' %}" width="65" height="50"></a>
+                    </div>
+
+        <!-- Contact Info Section -->
+                    <div id="contact_modal">
+                        <span id="contact_text">Feel free to contact me!</span>
+                        <img id="email_img" src="{% static 'home/email.png' %}" width="65" height="65">
+                        <span id="email">pdx@nathanielthomas.dev</span>
+                        <img id="phone_img" src="{% static 'home/phone.jpg' %}" width="65" height="65">
+                        <span id="phone">541.646.5895</span>
+                    </div>
+
+        <!-- Self Summary Section -->
+                    <div id="about_modal">
+                        <span>Hi, my name is Nathaniel; I am a certified software developer & Portland local. Currently proficient in Python, JavaScript, Django, HTML5, 
+                            and CSS for building full-stack applications. I have been fully immersed, continuously learning, strengthening my portfolio 
+                            everyday; I cannot wait to see what my future in the tech industry has to bring me.</br>I would define myself as a curious, mindful, 
+                            organized, and intuitive individual with an approachable, non judgmental personality.
+                        </span>
+                    </div>
+
+        <!-- Django Portfolio Section -->
+                    <div id="dj_modal">
+                        <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
+                        <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system, 
+                            in-game mini games, and gives players the ability to save their game through JSON in database for later gameplay. 
+                        </span>
+                        <img name="constantine" width="400" height="280">
+                    </div>
+
+        <!-- Python Portfolio Section  -->
+                    <div id="py_modal">
+                        <a href="https://github.com/rodgnathaniel/Python/blob/master/python_solutions/farming_simulator.py" target="_blank">Python Farming Simulator</a>
+                        <span>A class based Python game where the user earns money from completing farming tasks while maintaining healthy levels of sleep and
+                            cleanliness to keep from loosing. The user can spend money on upgrading their farm as well as gambling it playing Black 
+                            Jack. The game runs inside of While True loop that calls the classes by giving String inputs. 
+                        </span>
+                        <img name="farm" width="350" height="250">
+                    </div>
+
+        <!-- JavaScript Portfolio Section  -->
+                    <div id="js_modal">
+                        <a href="https://github.com/rodgnathaniel/JavaScript/blob/master/JavaScript_Solutions/atm.html" target="_blank">JavaScript ATM</a>
+                        <span>An ATM program made with JavaScript. Allows user to make deposits and withdrawals as well as keep track of 
+                            transaction history / interest.
+                        </span>
+                        <img name="atm" width="260" height="270">
+                    </div>
+
+        <!-- Node Portfolio Section  -->
+                    <div id="node_modal">
+                    
+                    </div>
+
+        <!-- HTML & CSS Portfolio Section  -->
+                    <div id="html_modal">
+                
+                    </div>
+                    
                 </div>
-        </header>  
+            </main>
 
-<!-- Main Navigation Bar -->
-        <div id="nav_bg">
-            <div id="nav_btn">
-                <button id="skills">Skills</button>
-                <button id="contact">Contact</button>
-                <button id="about">About Me</button>
-            </div>
-
-<!-- Drop Down Menu For Portfolio Pieces -->
-            <div id="skills_modal">
-                <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
-                <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
-                <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
-                <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
-                <a id="html_" href="#"><img src="{% static 'home/html.png' %}" width="65" height="50"></a>
-            </div>
-
-<!-- Contact Info Section -->
-            <div id="contact_modal">
-                <span id="contact_text">Feel free to contact me!</span>
-                <img id="email_img" src="{% static 'home/email.png' %}" width="65" height="65">
-                <span id="email">pdx@nathanielthomas.dev</span>
-                <img id="phone_img" src="{% static 'home/phone.jpg' %}" width="65" height="65">
-                <span id="phone">541.646.5895</span>
-            </div>
-
-<!-- Self Summary Section -->
-            <div id="about_modal">
-                <span>Hi, my name is Nathaniel; I am a certified software developer & Portland local. Currently proficient in Python, JavaScript, Django, HTML5, 
-                    and CSS for building full-stack applications. I have been fully immersed, continuously learning, strengthening my portfolio 
-                    everyday; I cannot wait to see what my future in the tech industry has to bring me.</br>I would define myself as a curious, mindful, 
-                    organized, and intuitive individual with an approachable, non judgmental personality.
-                </span>
-            </div>
-
-<!-- Django Portfolio Section -->
-            <div id="dj_modal">
-                <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
-                <span>A full-stack puzzle game built using Django. Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system, 
-                    in-game mini games, and gives players the ability to save their game through JSON in database for later gameplay. 
-                </span>
-                <img name="constantine" width="400" height="280">
-            </div>
-
-<!-- Python Portfolio Section  -->
-            <div id="py_modal">
-                <a href="https://github.com/rodgnathaniel/Python/blob/master/python_solutions/farming_simulator.py" target="_blank">Python Farming Simulator</a>
-                <span>A class based Python game where the user earns money from completing farming tasks while maintaining healthy levels of sleep and
-                    cleanliness to keep from loosing. The user can spend money on upgrading their farm as well as gambling it playing Black 
-                    Jack. The game runs inside of While True loop that calls the classes by giving String inputs. 
-                </span>
-                <img name="farm" width="350" height="250">
-            </div>
-
-<!-- JavaScript Portfolio Section  -->
-            <div id="js_modal">
-                <a href="https://github.com/rodgnathaniel/JavaScript/blob/master/JavaScript_Solutions/atm.html" target="_blank">JavaScript ATM</a>
-                <span>An ATM program made with JavaScript. Allows user to make deposits and withdrawals as well as keep track of 
-                    transaction history / interest.
-                </span>
-                <img name="atm" width="260" height="270">
-            </div>
-
-<!-- Node Portfolio Section  -->
-            <div id="node_modal">
-            
-            </div>
-
-<!-- HTML & CSS Portfolio Section  -->
-            <div id="html_modal">
-        
-            </div>
-            
-        </div>
-    </main>
-        <body>
+            <!-- JAVASCRIPT -->
             <script>
                 
                 //declaring buttons
@@ -336,5 +338,5 @@
                 window.onload = atm_imgchange();
                                   
             </script>
-        </body>
+    </body>
 </html>
