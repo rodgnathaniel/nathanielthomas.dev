@@ -92,6 +92,10 @@
 
         <!-- HTML & CSS Portfolio Section  -->
                     <div id="html_modal">
+                        <a href="#" target="_blank">JavaScript ATM</a>
+                        <span>Example of a fictional blog named Pizza Time. Made with HTML5, styled with CSS.
+                        </span>
+                        <img name="pizza" width="260" height="270">
                 
                     </div>
                     
@@ -337,6 +341,27 @@
                 }
 
                 window.onload = atm_imgchange();
+
+                //HTML slideshows
+                var p = 0;
+                var piz_images = [];
+                var piz_time = 4000;
+                piz_images[0] = "{% static 'home/piz.png' %}";
+                piz_images[1] = "{% static 'home/piz2.png' %}";
+
+                function piz_imgchange(){
+                    document.pizza.src = piz_images[p];
+
+                    if(p < piz_images.length - 1){
+                        p++;
+                    } else {
+                        p = 0;
+                    }
+                    
+                    setTimeout("piz_imgchange()", piz_time);
+                }
+
+                window.onload = piz_imgchange();
                                   
             </script>
     </body>
