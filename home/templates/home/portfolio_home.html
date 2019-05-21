@@ -87,16 +87,19 @@
 
         <!-- Node Portfolio Section  -->
                     <div id="node_modal">
-                    
+                        <a href="" target="_blank">Node SMS Messanger</a>
+                        <span>A Node app that allows user to enter in a phone number and easily send a message to given phone number. Utilizes socket.io
+                            and Nexmo API.
+                        </span>
+                        <img name="sms" width="370" height="250">
                     </div>
 
         <!-- HTML & CSS Portfolio Section  -->
                     <div id="html_modal">
-                        <a href="https://github.com/rodgnathaniel/HTML-CSS/blob/master/html/css_solutions/lab_02_blog.html" target="_blank">Pizza Time Blog</a>
+                        <a href="https://github.com/rodgnathaniel/HTML-CSS/blob/master/html/css_solutions/pizza_time.html" target="_blank">Pizza Time Blog</a>
                         <span>Example of a fictional blog named Pizza Time. Made with HTML5, styled with CSS.
                         </span>
                         <img name="pizza" width="370" height="250">
-                
                     </div>
                     
                 </div>
@@ -341,6 +344,27 @@
                 }
 
                 window.onload = atm_imgchange();
+
+                //node slideshows
+                var n = 0;
+                var sms_images = [];
+                var sms_time = 4000;
+                sms_images[0] = "{% static 'home/sms.png' %}";
+                sms_images[1] = "{% static 'home/sms2.png' %}";
+
+                function sms_imgchange(){
+                    document.sms.src = sms_images[p];
+
+                    if(n < sms_images.length - 1){
+                        n++;
+                    } else {
+                        n = 0;
+                    }
+                    
+                    setTimeout("sms_imgchange()", sms_time);
+                }
+
+                window.onload = sms_imgchange();
 
                 //HTML slideshows
                 var p = 0;
