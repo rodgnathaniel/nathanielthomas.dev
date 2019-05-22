@@ -11,6 +11,7 @@ body{
 main{
     display:grid;
     grid-template-columns: 1fr 4fr;
+    flex-wrap: wrap;
 }
 
 /* AVATAR, TITLE, LINKS, SLIDESHOW */
