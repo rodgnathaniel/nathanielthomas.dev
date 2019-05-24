@@ -432,6 +432,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #js_modal a{
     padding-top: 1%;
     padding-right: 14%;
@@ -472,6 +473,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #node_modal a{
     padding-top: 1%;
     padding-right: 14%;
@@ -512,6 +514,7 @@ h2 {
     align-items: center;
     animation: fadeIn 1s;
 }
+
 #html_modal a{
     padding-top: 1%;
     padding-right: 14%;
@@ -535,7 +538,6 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 110%;
 }
-
 
 /* CLOSE BUTTON  */
 .close {
