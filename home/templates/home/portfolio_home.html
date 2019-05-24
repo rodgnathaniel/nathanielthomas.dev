@@ -74,7 +74,7 @@
                             Jack. The game runs inside of While True loop that calls the classes by giving String inputs. 
                         </span>
                         <img name="farm" width="350" height="250">
-                        
+
                         <a href="#" target="_blank">Python Web Scraping</a>
                         <span>Python web scraping program using HTTP request, Regex, and Beautiful Soup.
                         </span>
@@ -325,6 +325,32 @@
                 }
 
                 window.onload = farm_imgchange();
+
+                //python web scraping project img slideshows
+                var s = 0;
+                var scrape_images = [];
+                var scrape_time = 6000;
+                scrape_images[0] = "{% static 'home/farm8.png' %}";
+                scrape_images[1] = "{% static 'home/farm7.png' %}";
+                scrape_images[2] = "{% static 'home/farm2.png' %}";
+                scrape_images[3] = "{% static 'home/farm3.png' %}";
+                scrape_images[4] = "{% static 'home/farm4.png' %}";
+                scrape_images[5] = "{% static 'home/farm5.png' %}";
+                scrape_images[6] = "{% static 'home/farm6.png' %}";
+
+                function scrape_imagechange(){
+                    document.scrape.src = scrape_images[s];
+
+                    if(s < scrape_images.length - 1){
+                        s++;
+                    } else {
+                        s = 0;
+                    }
+                    
+                    setTimeout("scrape_imagechange()", scrape_time);
+                }
+
+                window.onload = scrape_imagechange();
 
 
                 //JavaScript project img slideshows
