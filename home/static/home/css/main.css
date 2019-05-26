@@ -3,19 +3,19 @@
 
 
 /* BACKGROUND IMAGE */
-body{
+body {
     background-image:url(/static/home/blue_bg6.png);   
 }
 
 /* PAGE FORMAT */
-main{
+main {
     display:grid;
     grid-template-columns: 1fr 4fr;
     flex-wrap: wrap;
 }
 
 /* AVATAR, TITLE, LINKS, SLIDESHOW */
-header{
+header {
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
     height: 100%;
@@ -39,7 +39,7 @@ h2 {
     margin-left: 30%;
 }
 
-#self{
+#self {
     border-radius: 50%;
     border: 5px;
     border-color: ivory;
@@ -47,7 +47,7 @@ h2 {
     margin-top: 6%;   
 }
 
-#in, #git{
+#in, #git {
     margin: 1%50%5%38%;
 }
 
@@ -59,7 +59,7 @@ h2 {
     background-size: 25% 25%;
 }
 
-#nav_title a:hover{ 
+#nav_title a:hover { 
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 12%;
@@ -72,7 +72,7 @@ h2 {
 
 
 /* NAVIGATION BAR SIZING */
-#nav_bg{
+#nav_bg {
     background-color: rgba(0, 0, 0, .7);
     width: 90%;
     height: 18%;
@@ -82,7 +82,7 @@ h2 {
 }
 
 /* NAVIGATION BAR BUTTONS */
-#contact, #skills, #about{
+#contact, #skills, #about {
     color: black;
     margin-top: 1.3%;
     margin-left: 1%;
@@ -99,7 +99,7 @@ h2 {
 }
 
 /* HOVER AFFECTS FOR NAVIGATION BUTTONS */
-#contact:hover, #skills:hover, #about:hover{
+#contact:hover, #skills:hover, #about:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(0, 0, 0, .7);
     color: ivory;
@@ -123,7 +123,7 @@ h2 {
     animation: fadeIn 1s;
 } 
 
-#contact_modal span, a{
+#contact_modal span, a {
     padding-top: 3.7%;
     padding-bottom: 2%;
     color: ivory;
@@ -131,7 +131,7 @@ h2 {
     font-size: 185%;
 }
 
-#contact_txt{
+#contact_txt {
     margin-top: 2%;
 }
 
@@ -153,7 +153,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#about_modal span{
+#about_modal span {
     padding-top: 8%;
     padding-right: 18%;
     padding-bottom: 10%;
@@ -198,7 +198,7 @@ h2 {
     animation: fadeOut 1s;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
     from{
         opacity: 0;
     }
@@ -206,7 +206,7 @@ h2 {
         opacity: 1;
     }
 }
-@keyframes fadeOut{
+@keyframes fadeOut {
     from{
         opacity: 1;
     }
@@ -215,45 +215,45 @@ h2 {
     }
 }
 
-#skills_modal a:hover{
+#skills_modal a:hover {
     background-color: rgba(255,255,240,.6);
     border-color:rgba(176,224,230,0.75);
 }
 
 
 /* ICONS INSIDE OF SKILLS MODAL */
-#dj{
+#dj {
     padding-top: 9%;
     padding-bottom: 9%;
 }
 
-#dj span{
+#dj span {
     display: none;
 }
 
-#dj span:hover{
+#dj span:hover {
     display:block;
 }
 
-#py{
+#py {
     padding-top: 9%;
     padding-left: 26%;
     padding-bottom: 9%;
 }
 
-#js{
+#js {
     padding-top: 9%;
     padding-left: 19%;
     padding-bottom: 9%;
 }
 
-#node{
+#node {
     padding-top: 9%;
     padding-left: 12%;
     padding-bottom: 9%;
 }
 
-#html_{
+#html_ {
     padding-top: 9%;
     padding-left: 20%;
     padding-bottom: 9%;
@@ -277,7 +277,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#dj_modal a{
+#dj_modal a {
     padding-top: 1%;
     padding-right: 14%;
     padding-left: 14%;
@@ -286,14 +286,14 @@ h2 {
     font-size: 140%;
 }
 
-#dj_modal a:hover{
+#dj_modal a:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 8px;
  
 }
 
-#dj_modal span{
+#dj_modal span {
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -369,7 +369,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#farm_btn, #crawler_btn{
+#farm_btn, #crawler_btn {
     color: black;
     margin-top: 1.3%;
     margin-left: 1%;
@@ -385,13 +385,13 @@ h2 {
 
 }
 
-#farm_btn:hover, #crawler_btn:hover{
+#farm_btn:hover, #crawler_btn:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(0, 0, 0, .7);
     color: ivory;
 }
 
-#py_modal a{
+#py_modal a {
     padding-top: 1%;
     padding-right: 14%;
     padding-left: 14%;
@@ -400,14 +400,14 @@ h2 {
     font-size: 140%;
 }
 
-#py_modal a:hover{
+#py_modal a:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 8px;
  
 }
 
-#py_modal span{
+#py_modal span {
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -433,7 +433,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#js_modal a{
+#js_modal a {
     padding-top: 1%;
     padding-right: 14%;
     padding-left: 14%;
@@ -442,13 +442,13 @@ h2 {
     font-size: 140%;
 }
 
-#js_modal a:hover{
+#js_modal a:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 8px;
 }
 
-#js_modal span{
+#js_modal span {
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -474,7 +474,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#node_modal a{
+#node_modal a {
     padding-top: 1%;
     padding-right: 14%;
     padding-left: 14%;
@@ -483,13 +483,13 @@ h2 {
     font-size: 140%;
 }
 
-#node_modal a:hover{
+#node_modal a:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 8px;
 }
 
-#node_modal span{
+#node_modal span {
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -515,7 +515,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-#html_modal a{
+#html_modal a {
     padding-top: 1%;
     padding-right: 14%;
     padding-left: 14%;
@@ -524,13 +524,13 @@ h2 {
     font-size: 140%;
 }
 
-#html_modal a:hover{
+#html_modal a:hover {
     border-color:rgba(255,255,240,.8);
     background-color: rgba(255,255,240,.3);
     border-radius: 8px;
 }
 
-#html_modal span{
+#html_modal span {
     padding-right: 14%;
     padding-bottom: 1%;
     padding-left: 14%;
@@ -540,7 +540,7 @@ h2 {
 }
 
 /* CLOSE BUTTON  */
-.close {
+.close{ 
     position: absolute;
     top: 0;
     right: 14px;
